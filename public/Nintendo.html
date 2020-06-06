@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="product.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<style>
+   body
+   {background-color: rgb(53, 47, 47)  !important;}
+  /* nav start */
+.dropdown-menu{background-color:rgba(0, 0, 0, 0.85);}
+.dropdown:hover>.dropdown-menu
+{
+display: block;
+}
+.dropdown-menu a:hover
+{
+background-image: linear-gradient(to right, #0a0a0a,red,#191919);
+}
+.dropdown-menu a
+{
+  background-color: transparent;
+  border-left: 4px solid red;
+}
+.dropdown-menu a
+{
+color: white;
+}
+.nav-item a:hover
+{
+color: white;
+}
+.navbar-brand img
+{
+width: 80%;
+height: 50px;
+}
+.navbar-brand
+{
+width: 8%;
+}
+.nav-item a
+{
+color: white;
+}
+
+.btn{background-color: rgb(179, 10, 10);
+color: white;
+border: none;
+border-radius: 15px;
+padding: 8px 25px;
+}
+.btn:hover{box-shadow:0px 10px 10px 0px rgba(139, 4, 4, 0.55);
+background-color: rgb(179, 10, 10);}
+.navbar{background-color:rgba(0, 0, 0, 0.925);}
+/* nav end */
+
+</style>
+</head>
+<body style="background-color: rgb(53, 47, 47);">
+    
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#"><img src="Img//project logo2.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+          
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"aria-disabled="true" style="color: white;font-size: larger;"><i><b>Home</b></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="games.html"aria-disabled="true" style="color: white;font-size: larger;"><i><b>Games</b></i></a>
+              </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i>Categories</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="action.html" style="color: white;font-size: larger;">Action Games</a>
+        <a class="dropdown-item" href="adventure.html" style="color: white;font-size: larger;">Adventures Games</a>
+        <a class="dropdown-item" href="roleplay.html" style="color: white;font-size: larger;">Role-Playing Games</a>
+        <a class="dropdown-item" href="sports.html" style="color: white;font-size: larger;">Sports Games</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i> Consoles</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="PlayStation.html" style="color: white;font-size: larger;">PlayStation 4</a>
+        <a class="dropdown-item" href="Xbox.html" style="color: white;font-size: larger;">Xbox</a>
+        <a class="dropdown-item" href="Sega.html" style="color: white;font-size: larger;">Sega</a>
+        <a class="dropdown-item" href="Nintendo.html" style="color: white;font-size: larger;">Nintendo</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i>Brands</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="sony.html" style="color: white;font-size: larger;">Sony</a>
+        <a class="dropdown-item" href="segabrand.html" style="color: white;font-size: larger;">Sega</a>
+        <a class="dropdown-item" href="ubisoft.html" style="color: white;font-size: larger;">Ubisoft</a>
+        <a class="dropdown-item" href="Electronicarts.html" style="color: white;font-size: larger;">Electronis Arts</a>
+        <a class="dropdown-item" href="Bandai.html" style="color: white;font-size: larger;">Bandai</a>
+        <a class="dropdown-item" href="rockstar.html" style="color: white;font-size: larger;">Rockstar</a>
+        </div>
+        </li>
+        
+        <li class="nav-item">
+        <a class="nav-link" href="contact.html" aria-disabled="true" style="color: white;font-size: larger;"><i><b>Contact Us</b></i></a>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </div>
+        </nav>
+        </header>
+<section>
+<div class="container h-100 mt-5" >
+<div class="d-flex h-100 text-center align-items-center">
+<div class="w-100 text-white">
+<h1 class="display-3 mt-5">Nintendo <strong style="color: red;">Games</strong>  Consoles</h1>
+</div>
+</div>
+</div>
+</section>
+<section style="background: rgba(0, 0, 0, 0.836);">
+<div class="container h-100 mt-5" >
+<div class="row">
+<div class="col-sm-3 mt-5 mb-5">
+<div class="items">
+<img src="image/ns1.png" alt="image couldn't found" height="200px" width="80%">
+<div class="overlay-right">
+<button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+</div>
+<div class="product-bottom text-center ml-n5">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<h3>Nintendo Switch Wired <br> Controller</h3>
+<p>$699.99</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3 mt-5 mb-5">
+<div class="items">
+<img src="image/ns2.jpg" alt="image couldn't found" height="200px" width="80%">
+<div class="overlay-right">
+<button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+</div>
+<div class="product-bottom text-center ml-n5">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<h3>Nintendo Switch Pro <br> Controller</h3>
+<p>$134.99</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3 mt-5 mb-5">
+<div class="items">
+<img src="image/ns3.jpg" alt="image couldn't found" height="200px" width="80%">
+<div class="overlay-right">
+<button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+</div>
+<div class="product-bottom text-center ml-n5">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<h3>Nintendo Switch with <br> Gray Joy-Con</h3>
+<p>$519.99</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3" style="margin-top: 80px;">
+<form action="">
+<div class="p-1 bg-light rounded rounded-lg shadow-sm mb-4">
+<div class="input-group">
+<input type="search" placeholder="What're you searching for?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+<div class="input-group-append">
+<button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-3 mt-5 mb-5">
+<div class="items">
+<img src="image/ns4.jpg" alt="image couldn't found" height="200px" width="80%">
+<div class="overlay-right">
+<button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+</div>
+<div class="product-bottom text-center ml-n5">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<h3>Nintendo Switch - Joy <br> -Con Strap-Grey</h3>
+<p>$499.99</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3 mt-5 mb-5">
+<div class="items">
+<img src="image/ns5.jpg" alt="image couldn't found" height="200px" width="80%">
+<div class="overlay-right">
+<button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+</div>
+<div class="product-bottom text-center ml-n5">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<h3>Nintendo Switch Joy <br> Con Charging Grip</h3>
+<p>$999.99</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3 mt-5 mb-5">
+<div class="items">
+<img src="image/ns6.jpg" alt="image couldn't found" height="200px" width="80%">
+<div class="overlay-right">
+<button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+</div>
+<div class="product-bottom text-center ml-n5">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<h3>Nintendo Switch - Joy-Con </h3>
+<p>$499.99</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="cam">
+<h3><i class="fa fa-play" aria-hidden="true"></i>Most Played</h3>
+</div>
+<br>
+<table class="table" style="width: 100%;background-color: #191919;">
+<tbody>
+<tr>
+<td><img src="image/up1.jpg" alt="" width="150%" style="padding-right: 20px;" ></td>
+<td><h5 style="border-bottom: 2px solid red;color: white;">Nioh 2</h5>
+<p style="font-size: small;color: white;">Nioh 2 is an action role-playing game developed by
+Team Ninja.</p></td>
+</tr>
+<tr>
+<td><img src="image/up2.jpg" alt="" width="150%" style="padding-right: 20px;"></td>
+<td><h5 style="border-bottom: 2px solid red;color:white;">Biohazar RE:3</h5>
+<p style="font-size: small;color: white;">Resident Evil 3 is an survival horror game developed Capcom.</p></td>
+</tr>
+<tr>
+<td><img src="image/up3.jpg" alt="" width="150%" style="padding-right: 20px;"></td>
+<td><h5 style="border-bottom: 2px solid red;color: white;">Wasteland 3</h5>
+<p style="font-size: small;color: white;">Wasteland 3 is an role-playing video game developed by inXile Entertainment.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-3  mb-5">
+<div class="items">
+<img src="image/ns7.jpg" alt="image couldn't found" height="200px" width="80%">
+<div class="overlay-right">
+<button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+</div>
+<div class="product-bottom text-center ml-n5">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<h3>Nintendo Switch Left <br> and Right Joy-Cons</h3>
+<p>$159.99</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3 mb-5">
+<div class="items">
+<img src="image/ns8.jpg" alt="image couldn't found" height="200px" width="80%">
+<div class="overlay-right">
+<button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+</div>
+<div class="product-bottom text-center ml-n5">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<h3>Nintendo Switch - <br> Joy-Con (L/R)-Neon <br> Red/Neon Blue</h3>
+<p>$249.00</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3 mb-5">
+<div class="items">
+<img src="image/ns9.png" alt="image couldn't found" height="200px" width="80%">
+<div class="overlay-right">
+<button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+</div>
+<div class="product-bottom text-center ml-n5">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<h3>Nintendo Switch Wired <br> Controller – Yoshi </h3>
+<p>$250.00</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="cage">
+<img src="image/xbox.jpg" alt="">
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-3  mb-5">
+<div class="items">
+<img src="image/ns10.jpg" alt="image couldn't found" height="200px" width="80%">
+<div class="overlay-right">
+<button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+</div>
+<div class="product-bottom text-center ml-n5">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<h3>Nintendo Switch with <br> Neon Blue and Neon Red <br> Joy-Con with extended <br> battery</h3>
+<p>$240.00</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3 mb-5">
+<div class="items">
+<img src="image/ns11.jpg" alt="image couldn't found" height="200px" width="80%">
+<div class="overlay-right">
+<button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+</div>
+<div class="product-bottom text-center ml-n5">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<h3>Nintendo 3DS XL</h3>
+<p>$199.00</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3 mb-5">
+<div class="items">
+<img src="image/ns12.jpg" alt="image couldn't found" height="200px" width="80%">
+<div class="overlay-right">
+<button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+<button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+</div>
+<div class="product-bottom text-center ml-n5">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half-o"></i>
+<h3>Nintendo 3DS</h3>
+<p>$299.00</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="cam">
+<h3><i class="fa fa-play" aria-hidden="true"></i>Categories</h3>
+</div>
+<br>
+<nav class="navbar bg-dark">
+<ul class="navbar-nav">
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+<b><i>Games Categories</i></b>
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #191919;">
+<a class="dropdown-item" href="#">Action Games</a>
+<a class="dropdown-item" href="#">Adventures Games</a>
+<a class="dropdown-item" href="#">Role-Playing Games</a>
+<a class="dropdown-item" href="#">Sports Games</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+<b><i> Conoles</i></b>
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #191919;">
+<a class="dropdown-item" href="#">PlayStation 4</a>
+<a class="dropdown-item" href="#">Xbox</a>
+<a class="dropdown-item" href="#">Atari</a>
+<a class="dropdown-item" href="#">Nintendo</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+<b><i>Game Brands</i></b>
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #191919;">
+<a class="dropdown-item" href="#">Sony</a>
+<a class="dropdown-item" href="#">Bandai</a>
+<a class="dropdown-item" href="#">Suga</a>
+<a class="dropdown-item" href="#">Nintendo</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+<b><i>Companies</i></b>
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #191919;">
+<a class="dropdown-item" href="#" style="color: white;">Rockstar</a>
+<a class="dropdown-item" href="#" style="color: white;">Electronis Arts</a>
+<a class="dropdown-item" href="#" style="color: white;">Activision Blizard</a>
+<a class="dropdown-item" href="#" style="color: white;">Ubisoft</a>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</section>
+<div class="row">
+<div class="col-sm-12">
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark" style="background-color: rgba(0, 0, 0, 0.925);">
+<div style="background-color:#191919;">
+<div class="container">
+<!-- Grid row-->
+<div class="row py-4 d-flex align-items-center">
+<!-- Grid column -->
+<div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+<h6 class="mb-0" style="color: white;">Get connected with us on social networks!</h6>
+</div>
+<!-- Grid column -->
+<!-- Grid column -->
+<div class="col-md-6 col-lg-7 text-center text-md-right">
+<!-- Facebook -->
+<a class="fb-ic">
+<i class="fa fa-facebook mr-4" aria-hidden="true" style="color: white;"></i>
+</a>
+<!-- Twitter -->
+<a class="tw-ic">
+<i class="fa fa-twitter mr-4" aria-hidden="true" style="color: white;"> </i>
+</a>
+<!-- Google +-->
+<a class="gplus-ic">
+<i class="fa fa-google-plus mr-4" aria-hidden="true" style="color: white;"> </i>
+</a>
+<!--Linkedin -->
+<a class="li-ic">
+<i class="fa fa-linkedin mr-4" aria-hidden="true" style="color: white;"> </i>
+</a>
+<!--Instagram-->
+<a class="ins-ic">
+<i class="fa fa-instagram mr-4" aria-hidden="true" style="color: white;"> </i>
+</a>
+</div>
+<!-- Grid column -->
+</div>
+<!-- Grid row-->
+</div>
+</div>
+<!-- Footer Links -->
+<div class="container text-center text-md-left mt-5" >
+<!-- Grid row -->
+<div class="row mt-3">
+<!-- Grid column -->
+<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+<!-- Content -->
+<h1 class="text-uppercase font-weight-bold" style="color: white;font-family:sans-serif;">TangOline</h1>
+<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+<p style="color: white;">Former subsidiary of 2K Games; previously known as Illusion Softworks; closed in 2017 after merged into Hangar 13</p>
+</div>
+<!-- Grid column -->
+<!-- Grid column -->
+<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+<!-- Links -->
+<h6 class="text-uppercase font-weight-bold" style="color: white;">Products</h6>
+<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+<p>
+<a href="#!">Game Categories</a>
+</p>
+<p>
+<a href="#!">Game Consoles</a>
+</p>
+<p>
+<a href="#!">Game Companies</a>
+</p>
+<p>
+<a href="#!">Brands</a>
+</p>
+</div>
+<!-- Grid column -->
+<!-- Grid column -->
+<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+<!-- Links -->
+<h6 class="text-uppercase font-weight-bold" style="color: white;">Useful links</h6>
+<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+<p>
+<a href="#!">Your Account</a>
+</p>
+<p>
+<a href="#!">Contact Us</a>
+</p>
+<p>
+<a href="#!">Location</a>
+</p>
+<p>
+<a href="#!">Help</a>
+</p>
+</div>
+<!-- Grid column -->
+<!-- Grid column -->
+<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+<!-- Links -->
+<h6 class="text-uppercase font-weight-bold" style="color: white;">Contact</h6>
+    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+    <p style="color: white;">
+    <i class="fa fa-home mr-3" style="color: white;"></i> hassan-square,karachi,Pakistan</p>
+    <p style="color: white;">
+    <i class="fa fa-envelope mr-3" style="color: white;"></i> tangoline@example.com</p>
+    <p style="color: white;">
+    <i class="fa fa-phone mr-3" style="color: white;"></i> 0336-2510770</p>
+    <p style="color: white;">
+    <i class="fa fa-print mr-3" style="color: white;"></i> 0336-2510770</p>
+    </div>
+<!-- Grid column -->
+</div>
+<!-- Grid row -->
+</div>
+<!-- Footer Links -->
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3" style="color: white;">© 2020 Copyright:
+<a href="index.html"> Tangoline.com</a>
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+</div>
+</div>
+</div>
+</body>
+</html>

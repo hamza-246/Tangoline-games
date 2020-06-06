@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/png" href="…">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <title>Adventure Games</title>
+    <style>
+           body {
+             background-color: black;
+             margin:0;
+            padding:0;
+}
+/* nav start */
+
+.dropdown:hover>.dropdown-menu
+{
+display: block;
+}
+.dropdown-menu a:hover
+{
+background-image: linear-gradient(to right, #191919,red,#191919);
+}
+.dropdown-menu a
+{
+  background-color: transparent;
+  border-left: 2px solid red;
+}
+.dropdown-menu a
+{
+color: white;
+}
+.nav-item a:hover
+{
+color: white;
+}
+.navbar-brand img
+{
+width: 80%;
+height: 50px;
+}
+.navbar-brand
+{
+width: 8%;
+}
+.nav-item a
+{
+color: white;
+}
+
+.btn{background-color: rgb(179, 10, 10);
+color: white;
+border: none;
+border-radius: 15px;
+padding: 8px 25px;
+}
+
+/* nav end */
+#section1 { 
+    background: url(images/ghost.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    height: 100vh; /* 100% of viewport height */
+    margin: 0 auto; 
+    position: relative; 
+   
+}
+#section2 { 
+ background: url(images/evil2.PNG);
+    background-size: cover;
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    height: 100vh; /* 100% of viewport height */
+    margin: 0 auto; 
+    position: relative; 
+}
+#section3 { 
+  background: url(images/dark.jpg);
+  
+   background-size: cover;
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    height: 100vh; /* 100% of viewport height */
+    margin: 0 auto; 
+    position: relative; 
+}
+
+#section4 { 
+  background: url(images/witcher.jpg);
+  
+   background-size: cover;
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    height: 100vh; /* 100% of viewport height */
+    margin: 0 auto; 
+    position: relative; 
+}
+img{
+  height:180px;
+  width:100%;
+}
+
+div [class^="col-"]{
+  padding-left:5px;
+  padding-right:5px;
+}
+.card{
+  transition:0.5s;
+  cursor:pointer;
+}
+.card-title{  
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+}
+.card-title i{  
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+  color:#ffa710
+}
+.card-title i:hover{
+  transform: scale(1.25) rotate(100deg); 
+  color:#18d4ca;
+  
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+.card-text{
+  height:80px;  
+}
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+.card h3{
+  color: rgb(204, 11, 11);
+}
+.responsive{width: 100%;
+height: 0;
+padding-bottom:56.25% ;
+position: relative;
+}
+
+.responsive iframe{position: absolute;
+width: 100%;
+height: 100%;}
+.row1h{color: silver;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    padding:10px
+    }
+    .row1h3{color: red;
+        text-align: center;
+    }
+    .img5{width: 100%;
+    height: 300px;}
+.store{background-color: black;
+padding: 60px;
+}
+.cardstore{margin-bottom: 10px;}
+.explore2
+{color: silver;
+text-align: center;
+font-size: 50px;
+padding: 20px;}
+.storecard {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: rgb(161, 5, 5);
+  font-size: 28px;
+  float: left;
+  margin-top: 15px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 210px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 120px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 16px; 
+  color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 14px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: rgb(161, 5, 5);
+}
+.footer-widget ul li {
+  display: block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: rgb(161, 5, 5);
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: rgb(161, 5, 5);
+    padding: 13px 20px;
+    border: 1px solid rgb(161, 5, 5);
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 5px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: rgb(161, 5, 5);
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: rgb(161, 5, 5);
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+  /* nav start */
+  .dropdown-menu{background-color:rgba(0, 0, 0, 0.85);}
+.dropdown:hover>.dropdown-menu
+{
+display: block;
+}
+.dropdown-menu a:hover
+{
+background-image: linear-gradient(to right, #0a0a0a,red,#191919);
+}
+.dropdown-menu a
+{
+  background-color: transparent;
+  border-left: 4px solid red;
+}
+.dropdown-menu a
+{
+color: white;
+}
+.nav-item a:hover
+{
+color: white;
+}
+.navbar-brand img
+{
+width: 80%;
+height: 50px;
+}
+.navbar-brand
+{
+width: 8%;
+}
+.nav-item a
+{
+color: white;
+}
+
+.btn{background-color: rgb(179, 10, 10);
+color: white;
+border: none;
+border-radius: 15px;
+padding: 8px 25px;
+}
+.btn:hover{box-shadow:0px 10px 10px 0px rgba(139, 4, 4, 0.55);
+background-color: rgb(179, 10, 10);}
+.navbar{background-color:rgba(0, 0, 0, 0.925);}
+/* nav end */
+
+</style>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#"><img src="Img//project logo2.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+          
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"aria-disabled="true" style="color: white;font-size: larger;"><i><b>Home</b></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="games.html"aria-disabled="true" style="color: white;font-size: larger;"><i><b>Games</b></i></a>
+              </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i>Categories</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="action.html" style="color: white;font-size: larger;">Action Games</a>
+        <a class="dropdown-item" href="adventure.html" style="color: white;font-size: larger;">Adventures Games</a>
+        <a class="dropdown-item" href="roleplay.html" style="color: white;font-size: larger;">Role-Playing Games</a>
+        <a class="dropdown-item" href="sports.html" style="color: white;font-size: larger;">Sports Games</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i> Consoles</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="PlayStation.html" style="color: white;font-size: larger;">PlayStation 4</a>
+        <a class="dropdown-item" href="Xbox.html" style="color: white;font-size: larger;">Xbox</a>
+        <a class="dropdown-item" href="Sega.html" style="color: white;font-size: larger;">Sega</a>
+        <a class="dropdown-item" href="Nintendo.html" style="color: white;font-size: larger;">Nintendo</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i>Brands</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="sony.html" style="color: white;font-size: larger;">Sony</a>
+        <a class="dropdown-item" href="segabrand.html" style="color: white;font-size: larger;">Sega</a>
+        <a class="dropdown-item" href="ubisoft.html" style="color: white;font-size: larger;">Ubisoft</a>
+        <a class="dropdown-item" href="Electronicarts.html" style="color: white;font-size: larger;">Electronis Arts</a>
+        <a class="dropdown-item" href="Bandai.html" style="color: white;font-size: larger;">Bandai</a>
+        <a class="dropdown-item" href="rockstar.html" style="color: white;font-size: larger;">Rockstar</a>
+        </div>
+        </li>
+        
+        
+        <li class="nav-item">
+        <a class="nav-link" href="contact.html" aria-disabled="true" style="color: white;font-size: larger;"><i><b>Contact Us</b></i></a>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </div>
+        </nav>
+        </header>
+        <!-- Parallax -->
+    
+    <!-- Section 1 -->
+    <section id="section1" data-speed="8" data-type="background">
+      <div class="container">
+         <h4 style="color: rgb(184, 6, 6);font-size: 30px;padding: 125px;">"Ghost of Tsushima is an action-adventure stealth game. Played from a third-person perspective,
+             it features a large open world without any waypoints and can be explored without guidance."</h4>
+      </div>
+    </section>
+    <!-- Section 2 -->
+    <section id="section2" data-speed="4" data-type="background">
+      <div class="container">
+       <h4 style="color: rgb(206, 204, 204);font-size: 30px;padding: 135px;"> "Resident Evil 2 is a survival horror game developed and published by Capcom. A remake of the 1998 game of the same name."</h4>
+      </div>
+    </section>
+    <!-- Section 3 -->
+    <section id="section3" data-speed="2" data-type="background">
+      <div class="container">
+          <h4 style="color: rgb(206, 204, 204);font-size: 30px;padding: 70px;">"Beautifully remastered, return to Lordran in stunning detail. DARK SOULS: REMASTERED includes the main game plus the Artorias of the Abyss DLC.
+          </h4>
+      </div>
+    </section>
+    
+    <!-- Section 4 -->
+    <section id="section4" data-speed="2" data-type="background">
+      <div class="container">
+       <h4 style="color: rgb(184, 6, 6);font-size: 30px;padding: 135px;"> As war rages on throughout the Northern Realms, you take on the greatest contract of your life — tracking down the Child of Prophecy, a living weapon that can alter the shape of the world. </h4>
+      </div>
+    </section>
+              <!-- Parallax Ends -->
+         <!-- cards -->
+         <div class="row">
+          <div class="col-lg-12">
+              <h1 class="row1h">Find our Best Adventure Games</h1>
+           </div>
+         </div> 
+         <div class="container mt-2">
+      
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div class="card card-block">
+                <h4 class="card-title text-right"><i class="material-icons">New</i></h4>
+              <img src="images/skerio.jpg" alt="Photo of sunset">
+                  <h3 class="card-title mt-3 mb-3">Sekiro: Shadows die Twis</h3>
+                  <p class="card-text">Sekiro: Shadows Die Twice is an action-adventure video game developed by FromSoftware and published by Activision.</p> 
+            </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="card card-block">
+                <h4 class="card-title text-right"><i class="material-icons">Popular</i></h4>
+              <img src="images/darkpicture.jpg" alt="Photo of sunset">
+                  <h3 class="card-title  mt-3 mb-3">The Dark Picture: Men of Medan</h3>
+                  <p class="card-text">The Dark Pictures Anthology is a series of stand-alone, branching cinematic horror games.</p> 
+            </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="card card-block">
+                <h4 class="card-title text-right"><i class="material-icons">Trending</i></h4>
+              <img src="images/asasin.jpg" alt="Photo of sunset">
+                  <h3 class="card-title  mt-3 mb-3">Assasin's Creed</h3>
+                  <p class="card-text">Assassin's Creed is an action-adventure video game developed by Ubisoft Montreal </p> 
+            </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="card card-block">
+                <h4 class="card-title text-right"><i class="material-icons">New</i></h4>
+              <img src="https://static.pexels.com/photos/326424/pexels-photo-326424.jpeg" alt="Photo of sunset">
+                  <h3 class="card-title  mt-3 mb-3">Beautiful Desolation</h3>
+                  <p class="card-text">BEAUTIFUL DESOLATION is a 2D isometric adventure game set in the distant future..</p> 
+            </div>
+              </div>    
+            </div>
+            
+          </div>
+          
+          <div class="container mt-2">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-block">
+              <h4 class="card-title text-right"><i class="material-icons">Popular</i></h4>
+            <img src="images/ryse.PNG" alt="Photo of sunset">
+                <h3 class="card-title mt-3 mb-3">Ryse:SOn of ROme</h3>
+                <p class="card-text">Ryse: Son of Rome is a third-person action-adventure hack and slash video game developed by Crytek and published by Microsoft.</p> 
+          </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-block">
+              <h4 class="card-title text-right"><i class="material-icons">Top</i></h4>
+            <img src="images/Atelier.jpg" alt="Photo of sunset">
+                <h3 class="card-title  mt-3 mb-3">Attelier Lulua</h3>
+                <p class="card-text">Atelier Lulua: The Scion of Arland. Set to release on May 21, 2019, for the Nintendo Switch, PS4, and PC Steam..</p> 
+          </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-block">
+              <h4 class="card-title text-right"><i class="material-icons">Best</i></h4>
+            <img src="images/red.jpg" alt="Photo of sunset">
+                <h3 class="card-title  mt-3 mb-3">Red Dead Redemption 2</h3>
+                <p class="card-text">Red Dead Redemption 2 is a 2018 action-adventure game developed and published by Rockstar Games.</p>
+            </div>
+          </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-block">
+              <h4 class="card-title text-right"><i class="material-icons">Top</i></h4>
+            <img src="images/jedi.jpg" alt="Photo of sunset">
+                <h3 class="card-title  mt-3 mb-3">JEDI: Fallen Order</h3>
+                <p class="card-text">Fallen Order is an action-adventure game developed by Respawn Entertainment and published by Electronic Arts. .</p> 
+          </div>
+            </div>    
+          </div>
+      
+        </div>
+              <!-- Cards ends here -->
+
+      <!-- Game Video -->
+      <div class="container">
+        <div class="rowblack">
+        <div class="row">
+            <div class="col-lg-12">
+             
+                <h1 class="row1h">Son of Rome plunges you into the chaos and depravity of the late Roman Empire</h1>
+                <h2 class="row1h3"> stunningly detailed world of brutal combat and revenge, created in CRYENGINE....</h2>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-lg-12">
+        
+        <div class="responsive">
+            <iframe  width="560" height="315" 
+            src="ryse.mp4" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+             allowfullscreen></iframe> 
+            </div>  
+          </div>
+          </div>
+          
+</div>
+</div>
+</div>
+</div>
+       <br> <br>
+              <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark" style="background-color: rgba(0, 0, 0, 0.925);">
+  <div style="background-color:#191919;">
+  <div class="container">
+  <!-- Grid row-->
+  <div class="row py-4 d-flex align-items-center">
+  <!-- Grid column -->
+  <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+  <h6 class="mb-0" style="color: white;">Get connected with us on social networks!</h6>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-6 col-lg-7 text-center text-md-right">
+  <!-- Facebook -->
+  <a class="fb-ic">
+  <i class="fa fa-facebook mr-4" aria-hidden="true" style="color: white;"></i>
+  </a>
+  <!-- Twitter -->
+  <a class="tw-ic">
+  <i class="fa fa-twitter mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  <!-- Google +-->
+  <a class="gplus-ic">
+  <i class="fa fa-google-plus mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  <!--Linkedin -->
+  <a class="li-ic">
+  <i class="fa fa-linkedin mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  <!--Instagram-->
+  <a class="ins-ic">
+  <i class="fa fa-instagram mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  </div>
+  <!-- Grid column -->
+  </div>
+  <!-- Grid row-->
+  </div>
+  </div>
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5" >
+  <!-- Grid row -->
+  <div class="row mt-3">
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+  <!-- Content -->
+  <h1 class="text-uppercase font-weight-bold" style="color: white;font-family:sans-serif;">TangOline</h1>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p style="color: white;">Former subsidiary of 2K Games; previously known as Illusion Softworks; closed in 2017 after merged into Hangar 13</p>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase font-weight-bold" style="color: white;">Products</h6>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p>
+  <a href="#!">Game Categories</a>
+  </p>
+  <p>
+  <a href="#!">Game Consoles</a>
+  </p>
+  <p>
+  <a href="#!">Game Companies</a>
+  </p>
+  <p>
+  <a href="#!">Brands</a>
+  </p>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase font-weight-bold" style="color: white;">Useful links</h6>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p>
+  <a href="#!">Your Account</a>
+  </p>
+  <p>
+  <a href="#!">Contact Us</a>
+  </p>
+  <p>
+  <a href="#!">Location</a>
+  </p>
+  <p>
+  <a href="#!">Help</a>
+  </p>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase font-weight-bold" style="color: white;">Contact</h6>
+    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+    <p style="color: white;">
+    <i class="fa fa-home mr-3" style="color: white;"></i> hassan-square,karachi,Pakistan</p>
+    <p style="color: white;">
+    <i class="fa fa-envelope mr-3" style="color: white;"></i> tangoline@example.com</p>
+    <p style="color: white;">
+    <i class="fa fa-phone mr-3" style="color: white;"></i> 0336-2510770</p>
+    <p style="color: white;">
+    <i class="fa fa-print mr-3" style="color: white;"></i> 0336-2510770</p>
+    </div>
+  <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="color: white;">© 2020 Copyright:
+  <a href="index.html"> Tangoline.com</a>
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+</html>

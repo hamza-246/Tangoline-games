@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockstar Games</title>
+  
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+    <style>
+        body{background-color: rgb(53, 47, 47);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        }
+       
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 650px;
+    
+    }
+    .slide{margin-top: 75px;}
+   .mainimg{width: 100%;
+  height: 650px;}
+    .events2{color: rgb(177, 13, 13);
+margin-bottom: 20px;
+margin-top: 20px;
+text-align: center;
+font-size: 70px;
+font-weight: bolder;
+}
+    .row1h{color: silver;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    padding:10px
+    }
+
+    .row1h3{color: red;
+        text-align: center;
+    }
+
+.video1{
+height: 873px;}
+.rowblack{background-color:rgb(24, 23, 21);;
+margin-top: 20px;
+}
+
+.row1para{color: silver;
+text-align: center;
+padding: 10px;
+font-size: 18px;}
+
+.row2{margin-top: 20px;}
+
+.card{
+width: 100%;
+background-color:rgb(24, 23, 21);
+border-radius: 4px;
+
+position: relative;
+cursor: pointer;
+height:600px;
+margin-bottom: 40px;
+}
+.kit
+{height: 350px;
+padding: 20px;
+;
+
+}
+.text{padding: 12px;
+     font-size: 18px;
+    color: silver;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif ;
+  
+    
+}
+.redtext{color: red;}
+.row2h5{text-align: center;
+color: red;
+padding: 20px;
+font-size: 20px;
+}
+.responsive{width: 100%;
+height: 0;
+padding-bottom:56.25% ;
+position: relative;
+}
+
+.responsive iframe{position: absolute;
+width: 100%;
+height: 100%;}
+
+.containerinn{margin-bottom: 30px;
+}
+
+.image2 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 400px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.containerinn:hover .image2 {
+  opacity: 0.3;
+}
+
+.containerinn:hover .middle {
+  opacity: 1;
+}
+
+.text3 {border: 4px solid black;
+  background-color:rgb(24, 23, 21);
+  color: silver;
+  font-size: 16px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.btn{background-color: rgb(179, 10, 10);
+color: white;
+border: none;
+border-radius: 15px;
+padding: 8px 25px;
+}
+.ubiexplore
+{color: silver;
+text-align: center;
+font-size: 60px;
+}
+
+.card2{
+width: 100%;
+background-color: black;
+border-radius: 4px;
+
+position: relative;
+cursor: pointer;
+height: auto;
+margin-bottom: 40px;
+font-weight: 500;
+transition: transform .2s;
+box-shadow: 5px 5px 18px black;
+}
+
+.text1{padding: 12px;
+text-align: center;
+    color: white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif ;
+
+  
+}
+.redtext{color: red;}
+
+.kitnew{height: 450px;
+width: 100%;}
+
+.card2:hover{ transform: scale(1.05); 
+}
+.newcards{padding: 20px;}
+
+  /* nav start */
+  .dropdown-menu{background-color:rgba(0, 0, 0, 0.85);}
+.dropdown:hover>.dropdown-menu
+{
+display: block;
+}
+.dropdown-menu a:hover
+{
+background-image: linear-gradient(to right, #0a0a0a,red,#191919);
+}
+.dropdown-menu a
+{
+  background-color: transparent;
+  border-left: 4px solid red;
+}
+.dropdown-menu a
+{
+color: white;
+}
+.nav-item a:hover
+{
+color: white;
+}
+.navbar-brand img
+{
+width: 80%;
+height: 50px;
+}
+.navbar-brand
+{
+width: 8%;
+}
+.nav-item a
+{
+color: white;
+}
+
+.btn{background-color: rgb(179, 10, 10);
+color: white;
+border: none;
+border-radius: 15px;
+padding: 8px 25px;
+}
+.btn:hover{box-shadow:0px 10px 10px 0px rgba(139, 4, 4, 0.55);
+background-color: rgb(179, 10, 10);}
+.navbar{background-color:rgba(0, 0, 0, 0.925);}
+/* nav end */
+
+</style>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#"><img src="Img//project logo2.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+          
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"aria-disabled="true" style="color: white;font-size: larger;"><i><b>Home</b></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="games.html"aria-disabled="true" style="color: white;font-size: larger;"><i><b>Games</b></i></a>
+              </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i>Categories</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="action.html" style="color: white;font-size: larger;">Action Games</a>
+        <a class="dropdown-item" href="adventure.html" style="color: white;font-size: larger;">Adventures Games</a>
+        <a class="dropdown-item" href="roleplay.html" style="color: white;font-size: larger;">Role-Playing Games</a>
+        <a class="dropdown-item" href="sports.html" style="color: white;font-size: larger;">Sports Games</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i> Consoles</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="PlayStation.html" style="color: white;font-size: larger;">PlayStation 4</a>
+        <a class="dropdown-item" href="Xbox.html" style="color: white;font-size: larger;">Xbox</a>
+        <a class="dropdown-item" href="Sega.html" style="color: white;font-size: larger;">Sega</a>
+        <a class="dropdown-item" href="Nintendo.html" style="color: white;font-size: larger;">Nintendo</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i>Brands</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="sony.html" style="color: white;font-size: larger;">Sony</a>
+        <a class="dropdown-item" href="segabrand.html" style="color: white;font-size: larger;">Sega</a>
+        <a class="dropdown-item" href="ubisoft.html" style="color: white;font-size: larger;">Ubisoft</a>
+        <a class="dropdown-item" href="Electronicarts.html" style="color: white;font-size: larger;">Electronis Arts</a>
+        <a class="dropdown-item" href="Bandai.html" style="color: white;font-size: larger;">Bandai</a>
+        <a class="dropdown-item" href="rockstar.html" style="color: white;font-size: larger;">Rockstar</a>
+        </div>
+        </li>
+        
+        <li class="nav-item">
+        <a class="nav-link" href="contact.html" aria-disabled="true" style="color: white;font-size: larger;"><i><b>Contact Us</b></i></a>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </div>
+        </nav>
+        </header>
+  <div class="row slide">
+    <div class="col-md-12">
+      <img class="mainimg" src="images/rock3.jpg" alt="">
+    </div>
+  </div>
+        
+
+          <div class="row">
+            <div class="col-md-12">
+             <h1 class="events2">ROCKSTAR GAMES</h1>  
+            </div>
+          </div>
+
+<div class="container">
+<div class="rowblack">
+<div class="row">
+    <div class="col-lg-12">
+     
+        <h1 class="row1h">INTRODUCING THE ALL-NEW DINKA SUGOL</h1>
+        <h2 class="row1h3">AVAILABLE NOW IN GTA ONLINE</h2>
+    </div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+
+<div class="responsive">
+    <iframe  width="560" height="315" 
+    src="https://www.youtube.com/embed/3p9syJnuhzo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+     allowfullscreen></iframe> 
+
+</div>
+
+</div>
+
+</div>
+<div class="row">
+  <div class="col-lg-12">
+  <p class="row1para">Blink and you’ll miss it. The Dinka 
+      Sugoi is ready to hit the track in a glorious blaze of c
+      ompetitive destruction. Racing or rolling through the streets, 
+      owning this star is a clear
+       way to show you’re up there in the stratosphere of style.</p>
+      </div>
+  </div>
+</div>
+</div>
+
+<div class="row newcards">
+  <div class="col-md-6">
+    <div class="card2">
+      <img class="kitnew" src="images/rock20.jpg" alt="">
+      <div class="text1">
+        <h4>Nagasaki Stryder Now Available in GTA Online</h4>
+          <h5 class="redtext">GTA ONLINE</h4>
+      
+     
+      </div>
+  </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card2">
+      <img class="kitnew" src="images/rock21.png" alt="">
+      <div class="text1">
+        <h4>Red Dead Online Challenges, Bonuses and Discounts</h4>
+          <h5 class="redtext">RED DEAD ONLINE</h4>
+      
+     
+      </div>
+  </div>
+  </div>
+</div>
+
+<div class="row newcards">
+  <div class="col-md-4">
+    <div class="card2">
+      <img class="kitnew" src="images/rock22.jpg" alt="">
+      <div class="text1">
+        <h4>Double Rewards on Sell and Bunker Series</h4>
+          <h5 class="redtext">GTA ONLINE</h4>
+      
+     
+      </div>
+  </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card2">
+      <img class="kitnew" src="images/rock23.jpg" alt="">
+      <div class="text1">
+        <h4>Open Wheel Racing Tips, Tactics And Tricks</h4>
+          <h5 class="redtext">GAME TIPS</h4>
+      
+     
+      </div>
+  </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card2">
+      <img class="kitnew" src="images/rock24.jpg" alt="">
+      <div class="text1">
+        <h4>Red Dead Redemption 2 Wildlife Calendar</h4>
+          <h5 class="redtext">WAREHOUSE</h4>
+      
+     
+      </div>
+  </div>
+  </div>
+</div>
+    
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+        <h1 class="ubiexplore">LATEST NEWS</h1>
+    </div>
+</div>
+    <div class="row row2">
+        <div class="col-lg-3 col-md-6 col-sm-12" >
+            <div class="card">
+                <h5 class="row2h5">LIVESTRAEM</h5>
+            <img class="kit" src="images/rock5.jpg" alt="">
+           
+            <div class="text">
+           
+            <p>The infamous Danny Brown - AKA GTA Online's Yung Ancestor -
+                 will be joining us on the Rockstar
+                 Games official livestream this Friday as Danny.</p>
+            </div> 
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 col-sm-12" >
+            <div class="card">
+                <h5 class="row2h5">FAN ART-RED DEAD REDEMPTION</h5>
+            <img class="kit" src="images/rock6.jpg" alt="">
+           
+            <div class="text">
+           
+            <p>It's no secret that we enjoy seeing all kinds of great art that fans create based on our games,
+                 including illustrations of Grand Theft Auto</p>
+            </div> 
+
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 col-sm-12" >
+            <div class="card">
+                <h5 class="row2h5">FAN ART-RED DEAD REDEMPTION</h5>
+            <img class="kit" src="images/rock7.jpg" alt="">
+           
+            <div class="text">
+           
+            <p>From oil paintings to cosplay, the Red Dead Redemption 2 community has produced
+                 some incredible pieces of fan art.</p>
+            </div> 
+            </div>
+        </div>
+      
+    
+        
+            <div class="col-lg-3 col-md-6 col-sm-12" >
+                <div class="card">
+                    <h5 class="row2h5">GTA ONLINE</h5>
+                <img class="kit" src="images/rock9.jpg" alt="">
+               
+                <div class="text">
+               
+                <p>Check out an interview with USgamer about the variety of games you 
+                    can add to
+                     your Arcade property in The Diamond Casino Heist</p>
+                </div> 
+                </div>
+            </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-lg-12">
+                  <h1 class="row1h" >FEATURED GAMES</h1>
+                </div>
+              </div>  
+          
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <div class="containerinn">
+                    <img src="images/rock11.jpg" alt="" class="image2">
+                    <div class="middle">
+                        <div class="text3">Available for PC, PS4, Xbox One
+
+                            
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+            
+                    <div class="col-md-3 col-sm-6">
+                      <div class="containerinn">
+                        <img src="images/rock12.jpg" alt="" class="image2">
+                        <div class="middle">
+                            <div class="text3">Available for PC, PS4, Xbox One</div>
+                          </div>
+                        </div>
+                        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="containerinn">
+            <img src="images/rock13.jpg" alt="" class="image2">
+            <div class="middle">
+                <div class="text3">Available for PS4</div>
+              </div>
+            </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="containerinn">
+                <img src="images/rock14.jpg" alt="" class="image2">
+                <div class="middle">
+                    <div class="text3">Available for Xbox One</div>
+                  </div>
+                </div>
+                </div>
+</div>
+
+<div class="row games2">
+  <div class="col-md-3 col-sm-6">
+    <div class="containerinn">
+      <img src="images/rock15.jpg" alt="" class="image2">
+      <div class="middle">
+          <div class="text3">Available for PS4, Xbox One
+
+              
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="containerinn">
+          <img src="images/rock16.jpg" alt="" class="image2">
+          <div class="middle">
+              <div class="text3">Available for PC, PS4</div>
+            </div>
+          </div>
+          </div>
+
+<div class="col-md-3 col-sm-6">
+  <div class="containerinn">
+<img src="images/rock17.jpg" alt="" class="image2">
+<div class="middle">
+  <div class="text3">Available for PC, Xbox One</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6">
+  <div class="containerinn">
+  <img src="images/rock19.jpg" alt="" class="image2">
+  <div class="middle">
+      <div class="text3">Available for PC, PS4, Xbox One</div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+              </div>
+              
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark" style="background-color: rgba(0, 0, 0, 0.925);">
+  <div style="background-color:#191919;">
+  <div class="container">
+  <!-- Grid row-->
+  <div class="row py-4 d-flex align-items-center">
+  <!-- Grid column -->
+  <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+  <h6 class="mb-0" style="color: white;">Get connected with us on social networks!</h6>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-6 col-lg-7 text-center text-md-right">
+  <!-- Facebook -->
+  <a class="fb-ic">
+  <i class="fa fa-facebook mr-4" aria-hidden="true" style="color: white;"></i>
+  </a>
+  <!-- Twitter -->
+  <a class="tw-ic">
+  <i class="fa fa-twitter mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  <!-- Google +-->
+  <a class="gplus-ic">
+  <i class="fa fa-google-plus mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  <!--Linkedin -->
+  <a class="li-ic">
+  <i class="fa fa-linkedin mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  <!--Instagram-->
+  <a class="ins-ic">
+  <i class="fa fa-instagram mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  </div>
+  <!-- Grid column -->
+  </div>
+  <!-- Grid row-->
+  </div>
+  </div>
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5" >
+  <!-- Grid row -->
+  <div class="row mt-3">
+  <!-- Grid column -->
+  <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+  <!-- Content -->
+  <h1 class="text-uppercase font-weight-bold" style="color: white;font-family:sans-serif;">TangOline</h1>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p style="color: white;">Former subsidiary of 2K Games; previously known as Illusion Softworks; closed in 2017 after merged into Hangar 13</p>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase font-weight-bold" style="color: white;margin-right: 10px;">Products</h6>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p>
+  <a href="#!">Game Categories</a>
+  </p>
+  <p>
+  <a href="#!">Game Consoles</a>
+  </p>
+  <p>
+  <a href="#!">Game Companies</a>
+  </p>
+  <p>
+  <a href="#!">Brands</a>
+  </p>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase font-weight-bold" style="color: white;">Useful links</h6>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p>
+  <a href="#!">Your Account</a>
+  </p>
+  <p>
+  <a href="#!">Contact Us</a>
+  </p>
+  <p>
+  <a href="#!">Location</a>
+  </p>
+  <p>
+  <a href="#!">Help</a>
+  </p>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase font-weight-bold" style="color: white;">Contact</h6>
+    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+    <p style="color: white;">
+    <i class="fa fa-home mr-3" style="color: white;"></i> hassan-square,karachi,Pakistan</p>
+    <p style="color: white;">
+    <i class="fa fa-envelope mr-3" style="color: white;"></i> tangoline@example.com</p>
+    <p style="color: white;">
+    <i class="fa fa-phone mr-3" style="color: white;"></i> 0336-2510770</p>
+    <p style="color: white;">
+    <i class="fa fa-print mr-3" style="color: white;"></i> 0336-2510770</p>
+    </div>
+  <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="color: white;">© 2020 Copyright:
+  <a href="index.html"> Tangoline.com</a>
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    
+              <script>
+                function openmenu()
+                {
+                document.getElementById("side-menu").style.display="block"
+                document.getElementById("menu-btn").style.display="none"
+                document.getElementById("close-btn").style.display="block"
+                }
+                function closemenu()
+                {
+                document.getElementById("side-menu").style.display="none"
+                document.getElementById("menu-btn").style.display="block"
+                document.getElementById("close-btn").style.display="none"
+                }
+                </script>        
+</body>
+</html>

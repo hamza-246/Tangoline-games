@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEGA</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        body{background-color: rgb(53, 47, 47);}
+  
+   /* Make the image fully responsive */
+   .carousel-inner img {
+    opacity: 0.7;
+    width: 100%;
+    height: 500px;
+  }
+  .slide{margin-top: 75px;}
+.carousel-caption{bottom: 30px;
+left: 0;
+background-color:  white;
+width: 40%;
+height: auto;
+color: grey;
+padding: 10;}
+
+
+.sliderh1{font-size: 60px;
+font-weight: bold;
+;
+}
+
+@media screen and (max-width: 1200px) {
+    .sliderh1{font-size: 30px;}
+
+    .sliderh4{
+   font-size: 18px;
+  }
+}
+
+
+@media screen and (max-width: 850px) {
+    .sliderh1{font-size: 30px;}
+
+    .sliderh4{
+    display: none;
+  }
+}
+.btn{margin-top: 20px;}
+
+.bigimg1{width: 100%;
+height: 500px;
+
+}
+.picoverlay {
+  position: relative;
+  width: 100%;
+   margin-top: 75px;
+ margin-bottom: 40px;
+ ;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+ 
+  background: rgba(31, 31, 31, 0.9); /* Black see-through */
+  color: #f1f1f1; 
+  width: 40%;
+  transition: .5s ease;
+  opacity:1;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+ 
+}
+
+.overlay-right{
+display: block;
+opacity: 0;
+position: absolute;
+top: 5%;
+margin-left: 0px;
+width: 70px;
+}
+
+.overlay-right .fa{
+cursor: pointer;
+background-color: whitesmoke;
+color:rgb(20, 14, 14);
+height: 35px;
+width: 35px;
+font-size: 20px;
+padding: 5px;
+margin-top: 2%;
+margin-bottom: 1%;
+transition: transform .5s;
+}
+.overlay-right .fa:hover{transform: scale(1.3);
+box-shadow: rgb(15, 6, 6) 0 5px 10px 0;}
+
+.overlay-right .btn-secondary{
+background: none !important;
+border: none !important;
+box-shadow: none !important;
+}
+.items:hover .overlay-right{
+opacity: 1;
+margin-left: 2%;
+transition: 0.5s;
+}
+.product-top:hover .overlay-right{
+opacity: 1;
+margin-left: 5%;
+transition: 0.5s;
+}
+.product-bottom .fa{
+color: orange;
+font-size: 10px;
+}
+.product-bottom h3{
+font-size: 20px;
+font-weight: bold;
+color: white;
+}
+.product-bottom h5{
+font-size: 15px;
+padding-bottom: 10px;
+}
+.product-bottom p
+{
+color: white;
+}
+.middle{
+  text-align: center;
+  margin-bottom: 20px;
+}.head1{color: silver;
+font-size: 60px;}
+.sega{color: rgb(173, 7, 7);}
+
+.segabig{width: 100%;
+height: 650px;
+margin-bottom: 20px;}
+
+.medal{width: 250px;
+height: 200px;}
+
+.explain{color: silver;
+padding: 70px 30px;
+text-align: center;
+}
+.black{background-color: black;}
+
+.camera{height: 500px;
+width: 600px;
+
+}
+.explain2{color: silver;
+    margin-top: 160px;
+text-align: center;
+width: 100%;
+}
+.playst{height: 400px;
+width: 100%;}
+.head2{color: silver;
+font-size: 60px;
+padding: 10px;
+text-align: center;
+}
+.genesisend{margin-top: 20px;}
+.genesisimg{width: 100%;
+height: 300px;
+-webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;}
+.genesisimg:hover {
+  box-shadow: 0px 10px 10px 0px rgba(131, 4, 4, 0.24),40px 40px 40px 0px rgba(184, 4, 4, 0.19);
+}
+.cardgenesis{margin-top: 20px;
+margin-bottom: 20px;
+}
+  /* nav start */
+.dropdown-menu{background-color:rgba(0, 0, 0, 0.85);}
+.dropdown:hover>.dropdown-menu
+{
+display: block;
+}
+.dropdown-menu a:hover
+{
+background-image: linear-gradient(to right, #0a0a0a,red,#191919);
+}
+.dropdown-menu a
+{
+  background-color: transparent;
+  border-left: 4px solid red;
+}
+.dropdown-menu a
+{
+color: white;
+}
+.nav-item a:hover
+{
+color: white;
+}
+.navbar-brand img
+{
+width: 80%;
+height: 50px;
+}
+.navbar-brand
+{
+width: 8%;
+}
+.nav-item a
+{
+color: white;
+}
+
+.btn{background-color: rgb(179, 10, 10);
+color: white;
+border: none;
+border-radius: 15px;
+padding: 8px 25px;
+}
+.btn:hover{box-shadow:0px 10px 10px 0px rgba(139, 4, 4, 0.55);
+background-color: rgb(179, 10, 10);}
+.navbar{background-color:rgba(0, 0, 0, 0.925);}
+/* nav end */
+
+</style>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#"><img src="Img//project logo2.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+          
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"aria-disabled="true" style="color: white;font-size: larger;"><i><b>Home</b></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="games.html"aria-disabled="true" style="color: white;font-size: larger;"><i><b>Games</b></i></a>
+              </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i>Categories</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="action.html" style="color: white;font-size: larger;">Action Games</a>
+        <a class="dropdown-item" href="adventure.html" style="color: white;font-size: larger;">Adventures Games</a>
+        <a class="dropdown-item" href="roleplay.html" style="color: white;font-size: larger;">Role-Playing Games</a>
+        <a class="dropdown-item" href="sports.html" style="color: white;font-size: larger;">Sports Games</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i> Consoles</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="PlayStation.html" style="color: white;font-size: larger;">PlayStation 4</a>
+        <a class="dropdown-item" href="Xbox.html" style="color: white;font-size: larger;">Xbox</a>
+        <a class="dropdown-item" href="Sega.html" style="color: white;font-size: larger;">Sega</a>
+        <a class="dropdown-item" href="Nintendo.html" style="color: white;font-size: larger;">Nintendo</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i>Brands</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="sony.html" style="color: white;font-size: larger;">Sony</a>
+        <a class="dropdown-item" href="segabrand.html" style="color: white;font-size: larger;">Sega</a>
+        <a class="dropdown-item" href="ubisoft.html" style="color: white;font-size: larger;">Ubisoft</a>
+        <a class="dropdown-item" href="Electronicarts.html" style="color: white;font-size: larger;">Electronis Arts</a>
+        <a class="dropdown-item" href="Bandai.html" style="color: white;font-size: larger;">Bandai</a>
+        <a class="dropdown-item" href="rockstar.html" style="color: white;font-size: larger;">Rockstar</a>
+        </div>
+        </li>
+        
+        <li class="nav-item">
+        <a class="nav-link" href="contact.html" aria-disabled="true" style="color: white;font-size: larger;"><i><b>Contact Us</b></i></a>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </div>
+        </nav>
+        </header>
+      
+          <div class="row">
+            <div class="col-md-12">
+              <div class="picoverlay">
+
+                <img class="bigimg1" src="images/sega1.jpg" alt="">
+
+                <div class="overlay">
+                  <h3>
+                   TWO POINT HOSPITAL</h3>
+                    <h6>Out Now on carousel-control-nextbr Nintendo Switch™, PC Download, PS4, Xbox One®  </h6>
+                    
+                  </div>
+            </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+      <div class="row middle">
+        <div class="col-md-12">
+          
+          <h1 class="head1">LATEST FROM <strong class="sega"> SEGA</strong></h1>
+        </div>
+      </div>
+    
+         
+      <div class="row">
+        <div class="col-md-3 mt-5 mb-5">
+            <div class="items">
+            <img src="images/sega5.jpg" alt="image couldn't found" height="250px" width="100%">
+            <div class="overlay-right">
+            <button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+            <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+            </div>
+            <div class="product-bottom text-center ml-n5">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <h3>Sakura Wars</h3>
+                <p>PC Download</p>
+            </div>
+            </div>
+            </div>
+
+            <div class="col-md-3 mt-5 mb-5">
+                <div class="items">
+                <img src="images/sega6.jpg" alt="image couldn't found" height="250px" width="100%">
+                <div class="overlay-right">
+                <button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+                <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+                <div class="product-bottom text-center ml-n5">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <h3>Sonic Trash</h3>
+                    <p>PS4, Xbox One</p>
+                </div>
+                </div>
+                </div>
+
+                
+                <div class="col-md-3 mt-5 mb-5">
+                    <div class="items">
+                    <img src="images/sega3.jpg" alt="image couldn't found" height="250px" width="100%">
+                    <div class="overlay-right">
+                    <button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+                    <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                    <div class="product-bottom text-center ml-n5">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <h3>Sonic Dash</h3>
+                        <p>PS4</p>
+                    </div>
+                    </div>
+                    </div>
+
+                    
+                    <div class="col-md-3 mt-5 mb-5">
+                        <div class="items">
+                        <img src="images/sega4.jpg" alt="image couldn't found" height="250px" width="100%">
+                        <div class="overlay-right">
+                        <button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+                        </div>
+                        <div class="product-bottom text-center ml-n5">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>TROY - A Total War™ Saga</h3>
+                        <p>PC Download</p>
+                        </div>
+                        </div>
+                        </div>
+            
+            
+      
+      
+</div>
+
+<div class="row">
+    <div class="col-md-3 mt-5 mb-5">
+        <div class="items">
+        <img src="images/sega2.png" alt="image couldn't found" height="250px" width="100%">
+        <div class="overlay-right">
+        <button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+        <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+        </div>
+        <div class="product-bottom text-center ml-n5">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+        <h3>Bayonetta & Vanquish</h3>
+        <p>Nintendo Switch™</p>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-md-3 mt-5 mb-5">
+            <div class="items">
+            <img src="images/sega7.jpg" alt="image couldn't found" height="250px" width="100%">
+            <div class="overlay-right">
+            <button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+            <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+            </div>
+            <div class="product-bottom text-center ml-n5">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <h3>Humankind</h3>
+            <p>PC Download</p>
+            </div>
+            </div>
+            </div>
+
+            
+            <div class="col-md-3 mt-5 mb-5">
+                <div class="items">
+                <img src="images/sega9.jpg" alt="image couldn't found" height="250px" width="100%">
+                <div class="overlay-right">
+                <button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+                <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+                <div class="product-bottom text-center ml-n5">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <h3>Space Harrier</h3>
+                <p>Android, iOS, Nintendo Switch™, PC Download</p>
+                </div>
+                </div>
+                </div>
+
+                
+                <div class="col-md-3 mt-5 mb-5">
+                    <div class="items">
+                    <img src="images/sega10.png" alt="image couldn't found" height="250px" width="100%">
+                    <div class="overlay-right">
+                    <button type="button" class="btn btn-secondary" title="Quich Shop"><i class="fa fa-eye"></i></button>
+                    <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o"></i></button>
+                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                    <div class="product-bottom text-center ml-n5">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <h3>Gunstar Heroes</h3>
+                    <p>Android, iOS</p>
+                    </div>
+                    </div>
+                    </div>
+        </div>
+    </div>
+    <div class="black">
+<div class="row">
+   
+    <div class="col-md-12">
+        <img class="segabig" src="images/genesis001.webp" alt="">
+    </div>
+</div>
+<div class="container">
+<div class="row">
+    <div class="col-md-8">
+        <h4 class="explain">The iconic SEGA Genesis console returns in a slick, miniaturized form along with two classic 3-button control pads.</h4>
+    </div>
+    <div class="col-md-4">
+        <img class="medal" src="images/sega12.png" alt="">
+    </div>
+</div>
+
+<div class="row camerarow">
+    <div class="col-lg-7 col-md-12">
+        <img class="camera" src="images/sega13.png" alt="">
+        
+    </div>
+    <div class="col-lg-5 col-md-12">
+        <h4 class="explain2">The iconic SEGA Genesis console returns in a slick, miniaturized form along with two classic 3-button control pads.</h4>
+    </div>
+</div>
+
+
+<div class="row mx-auto">
+    <div class="col-md-12 ">
+        <h4 class="explain">Includes two classic wired 3-button control pads.
+            SEGA Genesis Mini is ready to plug and play right out of the box.
+        </h4>
+        
+        <img class="playst" src="images/sega14.png" alt="">
+       
+    </div>
+</div>
+
+<div class="row genesisend ">
+<div class="col-md-12">
+    <h1 class="head2">Pre Loaded with<strong class="sega"> Genesis</strong> Games</h1>
+</div>  
+</div>
+</div>
+<div class="row">
+  <div class="col-md-1"></div>
+    <div class="col-md-2 col-sm-4">
+        <div class="cardgenesis">
+        <img class="genesisimg" src="images/sega16.jpg" alt="">
+    
+    </div></div>
+    <div class="col-md-2 col-sm-4">
+      <div class="cardgenesis">
+      <img class="genesisimg" src="images/sega17.jpg" alt="">
+  
+  </div></div>
+  <div class="col-md-2 col-sm-4">
+    <div class="cardgenesis">
+    <img class="genesisimg" src="images/sega18.jpg" alt="">
+
+</div></div>
+<div class="col-md-2 col-sm-4">
+  <div class="cardgenesis">
+  <img class="genesisimg" src="images/sega19.jpg" alt="">
+
+</div></div>
+<div class="col-md-2 col-sm-4">
+  <div class="cardgenesis">
+  <img class="genesisimg" src="images/sega20.jpg" alt="">
+
+</div></div>
+<div class="col-md-1"></div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-1"></div>
+    <div class="col-md-2 col-sm-4">
+        <div class="cardgenesis">
+        <img class="genesisimg" src="images/sega21.jpg" alt="">
+    
+    </div></div>
+    <div class="col-md-2 col-sm-4">
+      <div class="cardgenesis">
+      <img class="genesisimg" src="images/sega22.jpg" alt="">
+  
+  </div></div>
+  <div class="col-md-2 col-sm-4">
+    <div class="cardgenesis">
+    <img class="genesisimg" src="images/sega23.jpg" alt="">
+
+</div></div>
+<div class="col-md-2 col-sm-4">
+  <div class="cardgenesis">
+  <img class="genesisimg" src="images/sega24.jpg" alt="">
+
+</div></div>
+<div class="col-md-2 col-sm-4">
+  <div class="cardgenesis">
+  <img class="genesisimg" src="images/sega25.jpg" alt="">
+
+</div></div>
+<div class="col-md-1"></div>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <img class="segabig" src="images/seag11.jpg" alt="">
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark" style="background-color: rgba(0, 0, 0, 0.925);">
+  <div style="background-color:#191919;">
+  <div class="container">
+  <!-- Grid row-->
+  <div class="row py-4 d-flex align-items-center">
+  <!-- Grid column -->
+  <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+  <h6 class="mb-0" style="color: white;">Get connected with us on social networks!</h6>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-6 col-lg-7 text-center text-md-right">
+  <!-- Facebook -->
+  <a class="fb-ic">
+  <i class="fa fa-facebook mr-4" aria-hidden="true" style="color: white;"></i>
+  </a>
+  <!-- Twitter -->
+  <a class="tw-ic">
+  <i class="fa fa-twitter mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  <!-- Google +-->
+  <a class="gplus-ic">
+  <i class="fa fa-google-plus mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  <!--Linkedin -->
+  <a class="li-ic">
+  <i class="fa fa-linkedin mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  <!--Instagram-->
+  <a class="ins-ic">
+  <i class="fa fa-instagram mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  </div>
+  <!-- Grid column -->
+  </div>
+  <!-- Grid row-->
+  </div>
+  </div>
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5" >
+  <!-- Grid row -->
+  <div class="row mt-3">
+  <!-- Grid column -->
+  <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+  <!-- Content -->
+  <h1 class="text-uppercase font-weight-bold" style="color: white;font-family:sans-serif;">TangOline</h1>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p style="color: white;">Former subsidiary of 2K Games; previously known as Illusion Softworks; closed in 2017 after merged into Hangar 13</p>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase font-weight-bold" style="color: white;margin-right: 10px;">Products</h6>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p>
+  <a href="#!">Game Categories</a>
+  </p>
+  <p>
+  <a href="#!">Game Consoles</a>
+  </p>
+  <p>
+  <a href="#!">Game Companies</a>
+  </p>
+  <p>
+  <a href="#!">Brands</a>
+  </p>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase font-weight-bold" style="color: white;">Useful links</h6>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p>
+  <a href="#!">Your Account</a>
+  </p>
+  <p>
+  <a href="#!">Contact Us</a>
+  </p>
+  <p>
+  <a href="#!">Location</a>
+  </p>
+  <p>
+  <a href="#!">Help</a>
+  </p>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase font-weight-bold" style="color: white;">Contact</h6>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p style="color: white;">
+  <i class="fa fa-home mr-3" style="color: white;"></i> hassan-square,karachi,Pakistan</p>
+  <p style="color: white;">
+  <i class="fa fa-envelope mr-3" style="color: white;"></i> tangoline@example.com</p>
+  <p style="color: white;">
+  <i class="fa fa-phone mr-3" style="color: white;"></i> 0336-2510770</p>
+  <p style="color: white;">
+  <i class="fa fa-print mr-3" style="color: white;"></i> 0336-2510770</p>
+  </div>
+  <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="color: white;">© 2020 Copyright:
+  <a href="index.html"> Tangoline.com</a>
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandai Namco Entertainment</title>
+   
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+    
+      width: 100%;
+      height: 600px;
+    }
+    .slide{margin-top: 75px;}
+body{background-color: rgb(53, 47, 47);}
+
+
+    .newh1{font-weight: bolder;
+    font-size: 55px;
+    font-style: italic;
+  }
+ 
+
+.events{color: silver;
+margin-bottom: 20px;
+}
+.events2{color: rgb(177, 13, 13);
+margin-bottom: 20px;
+margin-top: 20px;
+text-align: center;
+font-size: 70px;
+font-weight: bolder;
+}
+    .card{
+width: 100%;
+background-color: black;
+border-radius: 4px;
+
+position: relative;
+cursor: pointer;
+height: 500px;
+margin-bottom: 40px;
+transition: transform .2s;
+}
+.card:hover{transform: scale(1.05);}
+.kit
+{
+padding: 20px;
+;
+
+}
+.text1{padding: 12px;
+text-align: center;
+    color: silver;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-weight: bolder;
+    float: left;
+}
+.redtext{color: red;}
+
+.grey{background-color:rgb(24, 23, 21);
+color: silver;
+text-align: center;
+padding: 20px;
+}
+
+.subs{color: silver;
+font-size: 30px;
+margin-top: 30px;
+font-weight: 700;}
+
+.subhead{font-size: 18px;
+color: red;}
+.signme{background-color:rgb(182, 12, 12);
+color: silver;
+padding: 10px 30px;
+border-radius: 20px;
+border: none;
+font-size: 20px;
+margin-top: 20px;
+font-weight: 550;
+cursor: pointer;
+}
+.signme:hover{
+  background-color: rgb(160, 145, 145);
+  color: rgb(182, 12, 12);
+  font-weight: bolder;
+}
+
+
+.loyalty{text-align: center;
+margin-top: 30px;
+}
+
+.discover{color:silver;
+
+}
+
+.st{color: red;
+font-weight: 700;}
+.paraaa{color:silver;
+font-size: 18px;}
+
+.red{background-image: linear-gradient(rgb(204, 7, 7), black );
+margin-top: 50px;
+padding: 30px;
+}
+
+.redfirst{color: whitesmoke;}
+
+.card2{
+
+background-color: white;
+border-radius: 4px;
+
+position: relative;
+cursor: pointer;
+height: 430px;
+margin-bottom: 20px;
+}
+.kit2
+{
+
+height: 280px;
+width: 100%;
+}
+
+.cardtext{color: grey;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+    font-weight: bold;
+}
+
+  .redtext2{color: red;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .redheading{color: silver;
+  font-size: 40px;
+  }
+  .responsive{width: 100%;
+height: 0;
+padding-bottom:56.25% ;
+position: relative;
+}
+
+.responsive iframe{position: absolute;
+width: 100%;
+height: 100%;}
+
+/* nav start */
+
+.dropdown:hover>.dropdown-menu
+{
+display: block;
+}
+.dropdown-menu a:hover
+{
+background-image: linear-gradient(to right, #191919,red,#191919);
+}
+.dropdown-menu a
+{
+  background-color: transparent;
+  border-left: 2px solid red;
+}
+.dropdown-menu a
+{
+color: white;
+}
+.nav-item a:hover
+{
+color: white;
+}
+.navbar-brand img
+{
+width: 80%;
+height: 50px;
+}
+.navbar-brand
+{
+width: 8%;
+}
+.nav-item a
+{
+color: white;
+}
+
+.btn{background-color: rgb(179, 10, 10);
+color: white;
+border: none;
+border-radius: 15px;
+padding: 8px 25px;
+}
+
+
+
+/* nav end */
+
+.ubiexplore
+{color: silver;
+text-align: center;
+font-size: 60px;
+padding: 20px;}
+
+.img1{width: 100%;
+height: 380px;
+}
+.textnews1{color: silver;
+padding: 7px;}
+
+.date{color: red;}
+.cardnews{margin-bottom: 40px;}
+
+.textnews2{color: silver;
+padding: 7px;
+margin-top: 60px;}
+
+.img2{width: 100%;
+height: 280px;
+}
+.textnews3{color: silver;
+
+;
+}
+.img3{width: 100%;
+height: 280px;
+margin-top: 20px;
+}
+
+
+.img4{width: 100%;}
+
+.latestnews{padding: 10px;}
+/* footer start */
+
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: rgb(161, 5, 5);
+  font-size: 28px;
+  float: left;
+  margin-top: 15px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 210px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 120px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 16px; 
+  color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 14px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: rgb(161, 5, 5);
+}
+.footer-widget ul li {
+  display: block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: rgb(161, 5, 5);
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: rgb(161, 5, 5);
+    padding: 13px 20px;
+    border: 1px solid rgb(161, 5, 5);
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 5px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: rgb(161, 5, 5);
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: rgb(161, 5, 5);
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+    /* footer end */
+    
+ 
+  /* nav start */
+.dropdown-menu{background-color:rgba(0, 0, 0, 0.85);}
+.dropdown:hover>.dropdown-menu
+{
+display: block;
+}
+.dropdown-menu a:hover
+{
+background-image: linear-gradient(to right, #0a0a0a,red,#191919);
+}
+.dropdown-menu a
+{
+  background-color: transparent;
+  border-left: 4px solid red;
+}
+.dropdown-menu a
+{
+color: white;
+}
+.nav-item a:hover
+{
+color: white;
+}
+.navbar-brand img
+{
+width: 80%;
+height: 50px;
+}
+.navbar-brand
+{
+width: 8%;
+}
+.nav-item a
+{
+color: white;
+}
+
+.btn{background-color: rgb(179, 10, 10);
+color: white;
+border: none;
+border-radius: 15px;
+padding: 8px 25px;
+}
+.btn:hover{box-shadow:0px 10px 10px 0px rgba(139, 4, 4, 0.55);
+background-color: rgb(179, 10, 10);}
+.navbar{background-color:rgba(0, 0, 0, 0.925);}
+/* nav end */
+
+</style>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#"><img src="Img//project logo2.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+          
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"aria-disabled="true" style="color: white;font-size: larger;"><i><b>Home</b></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="games.html"aria-disabled="true" style="color: white;font-size: larger;"><i><b>Games</b></i></a>
+              </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i>Categories</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="action.html" style="color: white;font-size: larger;">Action Games</a>
+        <a class="dropdown-item" href="adventure.html" style="color: white;font-size: larger;">Adventures Games</a>
+        <a class="dropdown-item" href="roleplay.html" style="color: white;font-size: larger;">Role-Playing Games</a>
+        <a class="dropdown-item" href="sports.html" style="color: white;font-size: larger;">Sports Games</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i> Consoles</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="PlayStation.html" style="color: white;font-size: larger;">PlayStation 4</a>
+        <a class="dropdown-item" href="Xbox.html" style="color: white;font-size: larger;">Xbox</a>
+        <a class="dropdown-item" href="Sega.html" style="color: white;font-size: larger;">Sega</a>
+        <a class="dropdown-item" href="Nintendo.html" style="color: white;font-size: larger;">Nintendo</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i>Brands</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="sony.html" style="color: white;font-size: larger;">Sony</a>
+        <a class="dropdown-item" href="segabrand.html" style="color: white;font-size: larger;">Sega</a>
+        <a class="dropdown-item" href="ubisoft.html" style="color: white;font-size: larger;">Ubisoft</a>
+        <a class="dropdown-item" href="Electronicarts.html" style="color: white;font-size: larger;">Electronis Arts</a>
+        <a class="dropdown-item" href="Bandai.html" style="color: white;font-size: larger;">Bandai</a>
+        <a class="dropdown-item" href="rockstar.html" style="color: white;font-size: larger;">Rockstar</a>
+        </div>
+        </li>
+        
+        
+        <li class="nav-item">
+        <a class="nav-link" href="contact.html" aria-disabled="true" style="color: white;font-size: larger;"><i><b>Contact Us</b></i></a>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </div>
+        </nav>
+        </header>
+
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/bandai3.jpeg" alt="Los Angeles"
+             >
+            <div class="carousel-caption">
+              <h3>Tekken 7</h3>
+              <p>We had such a great time</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img src="images/bandai02.jpg" alt="Chicago" 
+            >
+            <div class="carousel-caption">
+              <h3>One Punch Man</h3>
+              <p>Thank you, Chicago!</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img src="images/bandai1.jpg" alt="New York"
+            >
+            <div class="carousel-caption">
+              <h3>Ridge Racer:Draw And Drift</h3>
+              <p>We love the car!</p>
+            </div>   
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" 
+        data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+   <div class="row">
+     <div class="col-md-12">
+      <h1 class="events2 newh1">BANDAI NAMCO ENTERTAINMENT</h1>  
+     </div>
+   </div>
+      
+      <div class="container">
+<div class="row">
+<h1 class="events newh1">Upcoming Games</h1>
+</div>
+<div class="row">
+<div class="col-md-4 col-sm-12" >
+    <div class="card">
+    <img class="kit" src="images/bandai4.jpg" alt="">
+    <div class="text1">
+        <h5 class="redtext">28/2/2020</h4>
+    <h3>One Man:A Hero Nobody Knows</h3>
+    </div> 
+    </div>
+
+</div>
+
+<div class="col-md-4 col-sm-12" >
+    <div class="card">
+    <img class="kit" src="images/bandai5.jpg" alt="">
+    <div class="text1">
+        
+    <h5 class="redtext">13/3/2020</h5>
+    <h3>My Hero One's Justice 2</h3>
+    </div> 
+    </div>
+
+</div>
+
+<div class="col-md-4 col-sm-12" >
+    <div class="card">
+    <img class="kit" src="images/bandai6.jpg" alt="">
+   
+    <div class="text1">
+   
+    <h5 class="redtext">17/9/2020</h5>
+    <h3>Cyberpink 2077</h3>
+    </div> 
+    </div>
+
+</div>
+</div>
+
+
+
+    <div class="row">
+        <div class="col-md-4" >
+            <div class="card">
+            <img class="kit" src="images/bandai7.jpg" alt="">
+            <div class="text1">
+                <h5 class="redtext">2020</h4>
+            <h3>Twin Mirror</h3>
+            </div> 
+            </div>
+        
+        </div>
+        
+        <div class="col-md-4" >
+            <div class="card">
+            <img class="kit" src="images/bandai8.jpg" alt="">
+            <div class="text1">
+                
+            <h5 class="redtext">27/3/2020</h5>
+            <h3>Gigantosaurus The Game</h3>
+            </div> 
+            </div>
+        
+        </div>
+        
+        <div class="col-md-4" >
+            <div class="card">
+            <img class="kit" src="images/bandai9.jpg" alt="">
+            <div class="text1">
+           
+            <h5 class="redtext">2020</h5>
+            <h3>Digimon Survive</h3>
+            </div> 
+            </div>
+         </div>
+         </div>
+
+       <div class="grey">
+<div class="row">
+<div class="col-md-12">
+  <h2>SUBSCRIBE TO OUR NEWSLETTER!</h2>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <h4 class="subhead">Get all the latest gaming news direct to your inbox!</h5>
+  </div>
+</div>
+
+<div class="row Betas">
+<div class="col-md-3">
+  <p class="subs">Betas</p>
+</div>
+<div class="col-md-3">
+  <p class="subs">Promotions</p>
+</div>
+<div class="col-md-3">
+  <p class="subs">Exclusivess</p>
+</div>
+<div class="col-md-3">
+  <p class="subs">Gifts</p>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12">
+    <button class="signme" type="submit"> Sign Me Up</button>
+  </div>
+</div>
+       </div> 
+   <div class="loyalty">   
+   <div class="row">
+     <div class="col-lg-12">
+       <h1 class="discover newh1">DISCOVER YOUR <strong class="st"> LOYALTY</strong> PROGRAM</h1>
+      </div>
+   </div> 
+   <div class="row">
+     <div class="col-lg-12"><p class="paraaa">Register your games, earn EP!C points & swap them for exclusive gifts!
+      Enjoy free DLC & themes from your favourite games, discover bonus and surprises all year long</p></div>
+   </div>
+
+   
+
+   <div class="row"style="height:500px;">
+     <div class="col-lg-12"> 
+       <iframe type="text/html" width="100%"
+        height="100%" 
+        src="https://www.youtube-nocookie.com/embed/t40SljlxCfE?theme=null&amp;rel=null&amp;controls=null&amp;showinfo=null&amp;autoplay=null&amp;autoplay=1" frameborder="0" allowfullscreen="" 
+        style="height: 100%;"></iframe></div>
+   </div>
+
+  </div> 
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h1 class="ubiexplore">LATEST NEWS</h1>
+  </div>
+</div>
+
+<div class="row latestnews">
+ 
+<div class="col-md-6 col-sm-12">
+  <div class="cardnews">
+<img class="img1" src="images/bandai21.jpg" alt="">
+<div class="textnews1">
+<h6 class="date">February 27,2020</h5>
+<h4>Become the new legend of football in CAPTAIN TSUBASA: RISE OF NEW CHAMPIONS!</h3>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+  <div class="cardnews">
+<img class="img2" src="images/bandai20.jpg" alt="">
+<div class="textnews2">
+  <h6 class="date">February 27,2020</h5>
+  <h4>Tomb Raider’s Lara Croft Joins Brawlhalla In Crossover Event </h4>
+  </div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+  <div class="cardnews">
+  <div class="textnews3">
+    <h6 class="date">February 27,2020</h5>
+    <h4>Iconic Zaku Amazing and two new mechas coming to MOBILE SUIT GUNDAM EXTREME VS. MAXIBOOST ON!</h4>
+    </div>
+    <img class="img3" src="images/bandai19.jpg" alt="">
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="cardnews">
+    <div class="textnews1">
+      <h6 class="date">February 27,2020</h5>
+      <h4>DRAGON BALL Z KAKAROT will be updated with the Patch 1.05</h3>
+      </div>
+      </div>
+  </div>
+  
+  <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="cardnews">
+    <img class="img4" src="images/bandai22.jpg" alt="">
+  </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="cardnews">
+    <img class="img4" src="images/bandai23.jpg" alt="">
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="cardnews">
+    <div class="textnews1">
+      <h6 class="date">February 27,2020</h5>
+      <h4>NARUTO SHIPPUDEN: Ultimate Ninja STORM 4 ROAD TO BORUTO coming on Nintendo Switch on 24th</h3>
+      
+      </div>
+    </div>
+  </div>
+  </div>
+  
+<div class="">
+  <div class="red">
+<div class="row">
+  <div class="col-lg-12">
+    <h2 class=" redheading">From our Stores</h2>
+  </div>
+</div>
+<div class="row redrow">
+  <div class="col-md-3 col-sm-6">
+    <div class="card2">
+      <img class="kit2" src="images/bandai10.jpg" alt="">
+      <div>
+      <h5 class="cardtext">TALES OF VESPERIA : REPEDE FIGURINE</h5>
+      <h5 class="redtext2">34.99$</h5>
+      </div> 
+      </div>
+  </div>
+
+  <div class="col-md-3 col-sm-6">
+    <div class="card2">
+      <img class="kit2" src="images/bandai12.jpg" alt="">
+      <div>
+      <h5 class="cardtext">TALES OF VESPERIA : REPEDE FIGURINE</h5>
+      <h5 class="redtext2">34.99$</h5>
+      </div> 
+      </div>
+  </div>
+  <div class="col-md-3 col-sm-6">
+    <div class="card2">
+      <img class="kit2" src="images/bandai13.jpg" alt="">
+      <div>
+      <h5 class="cardtext">TALES OF VESPERIA : REPEDE FIGURINE</h5>
+      <h5 class="redtext2">34.99$</h5>
+      </div> 
+      </div>
+  </div>
+  <div class="col-md-3 col-sm-6">
+    <div class="card2">
+      <img class="kit2" src="images/bandai14.jpg" alt="">
+      <div>
+      <h5 class="cardtext">TALES OF VESPERIA : REPEDE FIGURINE</h4>
+      <h5 class="redtext2">34.99$</h5>
+      </div> 
+      </div>
+  </div>
+  
+</div>
+
+
+</div>
+</div>
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark" style="background-color: rgba(0, 0, 0, 0.925);">
+  <div style="background-color:#191919;">
+  <div class="container">
+  <!-- Grid row-->
+  <div class="row py-4 d-flex align-items-center">
+  <!-- Grid column -->
+  <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+  <h6 class="mb-0" style="color: white;">Get connected with us on social networks!</h6>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-6 col-lg-7 text-center text-md-right">
+  <!-- Facebook -->
+  <a class="fb-ic">
+  <i class="fa fa-facebook mr-4" aria-hidden="true" style="color: white;"></i>
+  </a>
+  <!-- Twitter -->
+  <a class="tw-ic">
+  <i class="fa fa-twitter mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  <!-- Google +-->
+  <a class="gplus-ic">
+  <i class="fa fa-google-plus mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  <!--Linkedin -->
+  <a class="li-ic">
+  <i class="fa fa-linkedin mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  <!--Instagram-->
+  <a class="ins-ic">
+  <i class="fa fa-instagram mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  </div>
+  <!-- Grid column -->
+  </div>
+  <!-- Grid row-->
+  </div>
+  </div>
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5" >
+  <!-- Grid row -->
+  <div class="row mt-3">
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+  <!-- Content -->
+  <h1 class="text-uppercase font-weight-bold" style="color: white;font-family:sans-serif;">TangOline</h1>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p style="color: white;">Former subsidiary of 2K Games; previously known as Illusion Softworks; closed in 2017 after merged into Hangar 13</p>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase font-weight-bold" style="color: white;">Products</h6>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p>
+  <a href="#!">Game Categories</a>
+  </p>
+  <p>
+  <a href="#!">Game Consoles</a>
+  </p>
+  <p>
+  <a href="#!">Game Companies</a>
+  </p>
+  <p>
+  <a href="#!">Brands</a>
+  </p>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase font-weight-bold" style="color: white;">Useful links</h6>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p>
+  <a href="#!">Your Account</a>
+  </p>
+  <p>
+  <a href="#!">Contact Us</a>
+  </p>
+  <p>
+  <a href="#!">Location</a>
+  </p>
+  <p>
+  <a href="#!">Help</a>
+  </p>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase font-weight-bold" style="color: white;">Contact</h6>
+    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+    <p style="color: white;">
+    <i class="fa fa-home mr-3" style="color: white;"></i> hassan-square,karachi,Pakistan</p>
+    <p style="color: white;">
+    <i class="fa fa-envelope mr-3" style="color: white;"></i> tangoline@example.com</p>
+    <p style="color: white;">
+    <i class="fa fa-phone mr-3" style="color: white;"></i> 0336-2510770</p>
+    <p style="color: white;">
+    <i class="fa fa-print mr-3" style="color: white;"></i> 0336-2510770</p>
+    </div>
+  <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="color: white;">© 2020 Copyright:
+  <a href="index.html"> Tangoline.com</a>
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+</html>

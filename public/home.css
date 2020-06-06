@@ -1,0 +1,135 @@
+*
+{
+margin: 0px;
+padding: 0%;
+}
+body
+{
+background-color: #191919;
+height: auto;
+}
+.dropdown:hover>.dropdown-menu
+{
+display: block;
+}
+.navbar-brand
+{
+width: 8%;
+}
+.navbar-brand img
+{
+width: 80%;
+height: 50px;
+}
+.dropdown-menu a:hover
+{
+background-image: linear-gradient(to right, #191919,red,#191919);
+}
+.dropdown-menu a
+{
+background-color: transparent;
+border-left: 2px solid red;
+}
+.dropdown-menu a
+{
+color: white;
+}
+.nav-item a:hover
+{
+color: white;
+}
+header {
+position: relative;
+background-color: black;
+height: 95vh;
+min-height: 25rem;
+width: 100%;
+overflow: hidden;
+}
+a:hover
+{
+color: black;
+}
+header video {
+position: absolute;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: 0;
+-ms-transform: translateX(-50%) translateY(-50%);
+-moz-transform: translateX(-50%) translateY(-50%);
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+}
+
+.btn-danger{
+border: 2px solid #eb3007 !important;
+border-radius: 5rem !important;
+margin-top: 30px;
+
+}
+.btn-danger:hover
+{
+background-color: #191919 !important;
+color: white;
+transition: background-color 650ms !important;border: 2px solid #eb3007 !important;
+border-radius: 5rem !important;
+text-decoration: none !important;
+}
+header .container {
+position: relative;
+z-index: 2;
+}
+header .overlay {
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: black ;
+opacity: 0.5;
+z-index: 1;
+}
+@media (pointer: coarse) and (hover: none) {
+header {
+background: url('image/Afterpulse\ -\ Gameplay\ Trailer\ [30\ sec].mp4') black no-repeat center center scroll;
+}
+header video {
+display: none;
+}
+}
+.section1
+{
+margin-left: -77px;
+margin-right: -77px;
+}
+.section1 img
+{
+width: 100%;
+height: 450px;
+}
+.container 
+{
+position: relative;
+text-align: center;
+color: white;
+
+}
+.bottom-left
+{
+position: absolute;
+bottom: 50px;
+left: 16px;
+}
+.bottom-left h1
+{
+border-left: 10px solid red;
+font-size: 5vh;
+}
+.section1 img:hover
+{
+transform: scale(1.1);
+}

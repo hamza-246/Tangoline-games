@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONY</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+    <style>
+      body{background-color: rgb(53, 47, 47);
+        }
+
+.bigimg1{width: 100%;
+height: 600px;
+transition: transform .9s;
+
+}
+.bigimg1:hover{transform: scale(1.03);}
+.picoverlay {
+  position: relative;
+  width: 100%;
+   margin-top: 75px;
+ margin-bottom: 40px;
+ ;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+ 
+  background: rgba(31, 31, 31, 0.9); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:1;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+ 
+}
+.image2{width: 100%;
+height: 250px;
+}
+.explain{padding:10px;
+}
+.smallh6{color: red;
+letter-spacing: 2px;
+font-size: 20px;}
+.head1{color: silver;
+font-size: 60px;}
+.para1{color: grey;
+font-size: 18px;
+font-weight: 600;}
+
+.button1{
+  padding: 10px 40px;
+  color: white;
+  background-color: rgb(185, 6, 6);
+  border-radius: 20px;
+  border: none;
+}
+.button1:hover{color: rgb(185, 6, 6);
+background-color: white;
+font-weight: bolder;
+}
+.picoverlay2 {
+  position: relative;
+  width: 100%;
+ 
+ margin-bottom: 40px;
+}
+.image3{margin-top: 20px;
+height: 500px;
+width: 100%;
+}
+.middle{
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.card2{
+width: 100%;
+background-color: black;
+border-radius: 4px;
+
+position: relative;
+cursor: pointer;
+height: auto;
+margin-bottom: 40px;
+font-weight: 500;
+transition: transform .2s;
+box-shadow: 5px 5px 18px black;
+}
+
+.text1{padding: 12px;
+text-align: center;
+    color: white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif ;
+
+  
+}
+.redtext{color: red;}
+.kit{height: 300px;
+width: 100%;}
+.card2:hover{ transform: scale(1.05); 
+}
+.image5{
+height: 450px;
+width: 100%;
+}
+.overlay2 {
+  position: absolute; 
+  bottom: 0; 
+
+  background: rgba(12, 10, 10, 0.9); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:1;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+ 
+}
+.midbtn{
+  padding: 10px 30px;
+  color: white;
+  background-color: rgb(211, 8, 8);
+  border-radius: 20px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.midbtn:hover{color: rgb(185, 6, 6);
+background-color: white;
+font-weight: bolder;
+}
+.kit2{height: 350px;
+width: 100%;
+padding: 25px;}
+
+.midtext{color: gray;
+text-align: center;
+margin-bottom: 20px;
+padding: 10px;}
+.strong{color: rgb(204, 11, 11);}
+.midtexth1{font-size: 60px;
+color: silver;}
+
+.midimg{height: 750px;
+margin-bottom: 5px;
+}
+
+.ps1img{width: 100%;
+height: 750px;
+position: relative;
+}
+
+.ps1text{position: absolute;
+top: 150px;
+right: 120px;
+color: white;
+background: rgba(34, 29, 29, 0.8); /* Black see-through */
+width: 30%;
+padding: 20px;
+}
+.link1{text-decoration: none;
+color: white;}
+.link1:hover{color: red;
+text-decoration: none;}
+
+
+.ps2text{position: absolute;
+top: 150px;
+left: 120px;
+color: white;
+background: rgba(34, 29, 29, 0.8); /* Black see-through */
+width: 30%;
+padding: 20px;
+}
+.ps3text{position: absolute;
+top: 280px;
+right: 250px;
+color: black;
+background: rgba(235, 223, 223, 0.7); /* Black see-through */
+width: 30%;
+padding: 20px;
+}
+
+.lasttext{padding-left: 40px;}
+.last2{margin-top: 20px;
+margin-bottom: 20px;}
+
+
+@media screen and (max-width: 720px) {
+    .ps1text, .ps2text, .ps3text {font-size: 12px;}
+
+    
+}
+.final{margin-top: 20px;}
+
+  /* nav start */
+.dropdown-menu{background-color:rgba(0, 0, 0, 0.85);}
+.dropdown:hover>.dropdown-menu
+{
+display: block;
+}
+.dropdown-menu a:hover
+{
+background-image: linear-gradient(to right, #0a0a0a,red,#191919);
+}
+.dropdown-menu a
+{
+  background-color: transparent;
+  border-left: 4px solid red;
+}
+.dropdown-menu a
+{
+color: white;
+}
+.nav-item a:hover
+{
+color: white;
+}
+.navbar-brand img
+{
+width: 80%;
+height: 50px;
+}
+.navbar-brand
+{
+width: 8%;
+}
+.nav-item a
+{
+color: white;
+}
+
+.btn{background-color: rgb(179, 10, 10);
+color: white;
+border: none;
+border-radius: 15px;
+padding: 8px 25px;
+}
+.btn:hover{box-shadow:0px 10px 10px 0px rgba(139, 4, 4, 0.55);
+background-color: rgb(179, 10, 10);}
+.navbar{background-color:rgba(0, 0, 0, 0.925);}
+/* nav end */
+
+</style>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#"><img src="Img//project logo2.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+          
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"aria-disabled="true" style="color: white;font-size: larger;"><i><b>Home</b></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="games.html"aria-disabled="true" style="color: white;font-size: larger;"><i><b>Games</b></i></a>
+              </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i>Categories</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="action.html" style="color: white;font-size: larger;">Action Games</a>
+        <a class="dropdown-item" href="adventure.html" style="color: white;font-size: larger;">Adventures Games</a>
+        <a class="dropdown-item" href="roleplay.html" style="color: white;font-size: larger;">Role-Playing Games</a>
+        <a class="dropdown-item" href="sports.html" style="color: white;font-size: larger;">Sports Games</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i> Consoles</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="PlayStation.html" style="color: white;font-size: larger;">PlayStation 4</a>
+        <a class="dropdown-item" href="Xbox.html" style="color: white;font-size: larger;">Xbox</a>
+        <a class="dropdown-item" href="Sega.html" style="color: white;font-size: larger;">Sega</a>
+        <a class="dropdown-item" href="Nintendo.html" style="color: white;font-size: larger;">Nintendo</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i>Brands</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="sony.html" style="color: white;font-size: larger;">Sony</a>
+        <a class="dropdown-item" href="segabrand.html" style="color: white;font-size: larger;">Sega</a>
+        <a class="dropdown-item" href="ubisoft.html" style="color: white;font-size: larger;">Ubisoft</a>
+        <a class="dropdown-item" href="Electronicarts.html" style="color: white;font-size: larger;">Electronis Arts</a>
+        <a class="dropdown-item" href="Bandai.html" style="color: white;font-size: larger;">Bandai</a>
+        <a class="dropdown-item" href="rockstar.html" style="color: white;font-size: larger;">Rockstar</a>
+        </div>
+        </li>
+        
+        <li class="nav-item">
+        <a class="nav-link" href="contact.html" aria-disabled="true" style="color: white;font-size: larger;"><i><b>Contact Us</b></i></a>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </div>
+        </nav>
+        </header>
+        <div class="row">
+            <div class="col-md-12">
+              <div class="picoverlay">
+
+                <img class="bigimg1" src="images/sony001.jpg" alt="">
+
+                <div class="overlay">
+                  <h3>
+                    Now Available</h3>
+                    <h5>SEGA’s legendary Dreamcast rhythm game “Space Channel 5 ” has come to virtual reality as ”Space Channel 5 VR Kinda Funky News Flash!".</h5>
+                    
+                  </div>
+            </div>
+        </div>
+      </div>
+<div class="container">
+      <div class="row startrow">
+<div class="col-md-6">
+  <img class="image2" src="images/sony2.png" alt="">
+</div>
+<div class="col-md-6">
+  <div class="explain">
+  <h6 class="smallh6">GET YOUR NEXT PLAYSTATION</h6>
+  <h1 class="head1">From PlayStation</h1>
+  <p class="para1">The most advanced PlayStation® system ever now comes in a bundle that includes a jet black 1TB PS4™ 
+    Pro system, a matching 
+    DUALSHOCK®4 wireless controller, and Call of Duty®: Modern Warfare® on Blu-ray Disc.</p>
+    <button class="button1">BUY NOW </button>
+  
+     
+</div>
+</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="picoverlay2">
+        <img class="image3" src="images/sony3.jpg" alt="">
+        <div class="overlay">
+          <h4 class="">
+           Open Wheel Race</h4>
+            <h6 class="wheelsub">The future of competitive motorsport has arrived, and it’s in a hurry.</h6>
+            
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="midtext">
+        <h1 class="midtexth1">Only on <span class="strong"> PlayStation</span></h1>
+        <h5>You've come to the right place. Exclusive games take you on incredible journeys, from  <br>critically acclaimed indies
+         
+           to award-winning AAA hits.</h5>
+      </div>
+      </div>
+    </div>
+
+<div class="row midimg">
+  <div class="col-md-12">
+<img class="ps1img" src="images/sonyps1.jpg" alt="">
+<div class="ps1text">
+  <h2>Days Gone</h2>
+  Days Gone is an open-world action-adventure game set two years after a devastating global pandemic.
+   Play as Deacon St. John, a bounty hunter facing a brutal struggle for survival while searching for a reason to live.
+<br>
+<br>
+<a class="link1" href="#">Learn More</a>
+<br>
+<br>
+</div>
+
+</div>
+</div>
+
+<div class="row midimg">
+  <div class="col-md-12">
+<img class="ps1img" src="images/sonyps2.jpg" alt="">
+<div class="ps2text">
+  <h2>Ghost of Tsushima</h2>
+  in Sakai is one of the last survivors of a noble samurai clan. To combat his overwhelming foes, he must pioneer 
+  deadly new fighting techniques—the way of The Ghost—and wage an unconventional war for the people of Japan.
+<br>
+<br>
+<a class="link1" href="#">Learn More</a>
+<br>
+<br>
+
+</div>
+
+</div></div>
+
+<div class="row midimg">
+  <div class="col-md-12">
+<img class="ps1img" src="images/sonyps3.jpg" alt="">
+<div class="ps3text">
+  <h2>Marvel's Spider-Man</h2>
+  When a new villain threatens Marvel’s New York, Peter Parker and Spider-Man’s worlds collide. 
+  To save the city and those he loves, he must rise up and be greater.
+  <br>
+<br>
+<a class="link1" href="#">Learn More</a>
+<br>
+<br>
+
+</div>
+
+</div></div>
+
+
+
+    
+<div class="container">
+  <div class="row middle">
+    <div class="col-md-12">
+      <h6 class="smallh6">GREAT GAMES</h6>
+      <h1 class="head1">Coming Soon</h1>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="card2">
+      <img class="kit" src="images/sony4.jpg" alt="">
+      <div class="text1">
+        <h4>NIOH 2</h4>
+          <h5 class="redtext">13-13-2020</h4>
+      
+     
+      </div>
+  </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card2">
+      <img class="kit" src="images/sony19.jpg" alt="">
+      <div class="text1">
+        <h4>THE LAST OF US</h4>
+          <h5 class="redtext">13-13-2020</h4>
+          </div>
+     
+      </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card2">
+      <img class="kit" src="images/sony5.jpg" alt="">
+      <div class="text1">
+        <h4>MLB® The Show™</h4>
+          <h5 class="redtext">13-13-2020</h4>
+          </div>
+     
+      </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card2">
+      <img class="kit" src="images/sony6.jpg" alt="">
+      <div class="text1">
+        <h4>DOOM ETERNAL</h4>
+          <h5 class="redtext">13-13-2020</h4>
+          </div>
+     
+      </div>
+  </div>
+
+
+</div> 
+<div class="row">
+  <div class="col-md-3">
+    <div class="card2">
+      <img class="kit" src="images/sony7.jpg" alt="">
+      <div class="text1">
+        <h4>PAPER BEAST</h4>
+          <h5 class="redtext">13-13-2020</h4>
+      
+     
+      </div>
+  </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card2">
+      <img class="kit" src="images/sony8.jpg" alt="">
+      <div class="text1">
+        <h4>FINAL FANTACY VII</h4>
+          <h5 class="redtext">13-13-2020</h4>
+          </div>
+     
+      </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card2">
+      <img class="kit" src="images/sony9.jpg" alt="">
+      <div class="text1">
+        <h4>HUNTING GROUNDS</h4>
+          <h5 class="redtext">13-13-2020</h4>
+          </div>
+     
+      </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card2">
+      <img class="kit" src="images/sony11.jpg" alt="">
+      <div class="text1">
+        <h4>IRON MAN</h4>
+          <h5 class="redtext">13-13-2020</h4>
+          </div>
+     
+      </div>
+  </div>
+
+
+</div> 
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="picoverlay2">
+    <img class="image5" src="images/sony13.jpg" alt="">
+    <div class="overlay2">
+      <h4 class="">
+        Essentials Picks Sale
+       
+      </h4>
+        <h6 class="wheelsub">Save big on hits like Grand Theft Auto V, Far Cry 5, Borderlands 3 Deluxe Edition, No Man's Sky and more!</h6>
+        
+      </div>
+  </div>
+</div>
+</div>
+
+
+<div class="container">
+  <div class="row middle">
+    <div class="col-md-12">
+      <h6 class="smallh6">MORE PLAYSTATIONS</h6>
+      <h1 class="head1">Amazing Experiences</h1>
+    </div>
+  </div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="card2">
+      <img class="kit2" src="images/sony15.png" alt="">
+      <div class="text1">
+        <h4>PLAYSTATION DIRECT</h4>
+          <h5 class="redtext">Bundle & Save </h4>
+            <button class="midbtn">SHOP NOW</button>
+          </div>
+     
+      </div>
+  </div>
+  <div class="col-md-6" >
+    <div class="card2">
+      <img class="kit2" src="images/sony008.jpg" alt="">
+      <div class="text1">
+        <h4>PLAYSTATION VIDEO</h4>
+          <h5 class="redtext">Bundle & Save </h4>
+            <button class="midbtn">SHOP NOW</button>
+          </div>
+     
+      </div>
+  </div>
+  
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card2">
+      <img class="kit2" src="images/sony17.png" alt="">
+      <div class="text1">
+        <h4>PLAYSTATION STORE</h4>
+          <h5 class="redtext">Essential Picks Sale</h4>
+            <button class="midbtn">SHOP NOW</button>
+          </div>
+     
+      </div>
+  </div>
+  <div class="col-md-6" >
+    <div class="card2">
+      <img class="kit2" src="images/sony16.png" alt="">
+      <div class="text1">
+        <h4>PLAYSTATION ACCESSORIES</h4>
+          <h5 class="redtext">Officialy Licenced</h4>
+            <button class="midbtn">SHOP NOW</button>
+          </div>
+     
+      </div>
+  </div>
+ 
+</div>
+
+</div>
+
+<div class="row last2">
+  <div class="col-md-12">
+    <div class="lasttext">
+    <h6 class="smallh6">THE GAMES YOU WANT</h6>
+      <h1 class="head1"> Play it on<span class="strong"> PlayStation</span>®</h1>
+    </div>
+  </div>
+</div>
+<div class="row midimg">
+  <div class="col-md-12">
+<img class="ps1img" src="images/sonyps4.jpg" alt="">
+<div class="ps2text">
+  <h2>MLB® The Show™ 19</h2>
+  The Show is back! MLB® The Show™ 19 brings you the best of baseball. Play America’s pastime your way, with new game modes, 
+  expanded team building and player customization, and an extensive personalized RPG experience. Create your own player and rise through the
+   MLB ranks or play against others as baseball’s greatest stars and legends.
+  <br>
+<br>
+<a class="link1" href="#">Learn More</a>
+<br>
+<br>
+
+</div>
+
+</div></div>
+<div class="row midimg">
+  <div class="col-md-12">
+<img class="ps1img" src="images/sonyps5.jpg" alt="">
+<div class="ps1text">
+  <h2>Crash Team Racing Nitro-Fueled</h2>
+  Crash is back in the driver’s seat! Get ready to go fur-throttle with Crash™ Team Racing Nitro-Fueled. It’s the authentic CTR experience
+   plus a whole lot more, now fully-remastered and revved up to the max.
+  <br>
+<br>
+<a class="link1" href="#">Learn More</a>
+<br>
+<br>
+
+</div>
+
+</div></div>
+<div class="row midimg">
+  <div class="col-md-12">
+<img class="ps1img" src="images/sonyps6.jpg" alt="">
+<div class="ps2text">
+  <h2>KINGDOM HEARTS III</h2>
+  KINGDOM HEARTS III tells the story of the power of friendship and light vs. darkness as Sora and his friends embark on a perilous adventure. Set in a vast array of 
+  Disney and Pixar worlds, KINGDOM HEARTS follows the journey of Sora, an unknowing heir to a spectacular power.
+  <br>
+<br>
+<a class="link1" href="#">Learn More</a>
+<br>
+<br>
+
+</div>
+
+</div></div>
+
+<div class="row final">
+  <div class="col-md-12">
+    <div class="picoverlay2">
+    <img class="image3" src="images/sony18.jpg" alt="">
+    <div class="overlay">
+      <h4 class="">
+        Now Available</h4>
+        <h6 class="wheelsub">Create, share and collaborate on anything from games to gadgets, 
+          music to movies, puzzles to paintings and more - all from your sofa.</h6>
+        
+      </div>
+  </div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark" style="background-color: rgba(0, 0, 0, 0.925);">
+  <div style="background-color:#191919;">
+  <div class="container">
+  <!-- Grid row-->
+  <div class="row py-4 d-flex align-items-center">
+  <!-- Grid column -->
+  <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+  <h6 class="mb-0" style="color: white;">Get connected with us on social networks!</h6>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-6 col-lg-7 text-center text-md-right">
+  <!-- Facebook -->
+  <a class="fb-ic">
+  <i class="fa fa-facebook mr-4" aria-hidden="true" style="color: white;"></i>
+  </a>
+  <!-- Twitter -->
+  <a class="tw-ic">
+  <i class="fa fa-twitter mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  <!-- Google +-->
+  <a class="gplus-ic">
+  <i class="fa fa-google-plus mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  <!--Linkedin -->
+  <a class="li-ic">
+  <i class="fa fa-linkedin mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  <!--Instagram-->
+  <a class="ins-ic">
+  <i class="fa fa-instagram mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  </div>
+  <!-- Grid column -->
+  </div>
+  <!-- Grid row-->
+  </div>
+  </div>
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5" >
+  <!-- Grid row -->
+  <div class="row mt-3">
+  <!-- Grid column -->
+  <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+  <!-- Content -->
+  <h1 class="text-uppercase font-weight-bold" style="color: white;font-family:sans-serif;">TangOline</h1>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p style="color: white;">Former subsidiary of 2K Games; previously known as Illusion Softworks; closed in 2017 after merged into Hangar 13</p>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase font-weight-bold" style="color: white;margin-right: 10px;">Products</h6>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p>
+  <a href="#!">Game Categories</a>
+  </p>
+  <p>
+  <a href="#!">Game Consoles</a>
+  </p>
+  <p>
+  <a href="#!">Game Companies</a>
+  </p>
+  <p>
+  <a href="#!">Brands</a>
+  </p>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase font-weight-bold" style="color: white;">Useful links</h6>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p>
+  <a href="#!">Your Account</a>
+  </p>
+  <p>
+  <a href="#!">Contact Us</a>
+  </p>
+  <p>
+  <a href="#!">Location</a>
+  </p>
+  <p>
+  <a href="#!">Help</a>
+  </p>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase font-weight-bold" style="color: white;">Contact</h6>
+    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+    <p style="color: white;">
+    <i class="fa fa-home mr-3" style="color: white;"></i> hassan-square,karachi,Pakistan</p>
+    <p style="color: white;">
+    <i class="fa fa-envelope mr-3" style="color: white;"></i> tangoline@example.com</p>
+    <p style="color: white;">
+    <i class="fa fa-phone mr-3" style="color: white;"></i> 0336-2510770</p>
+    <p style="color: white;">
+    <i class="fa fa-print mr-3" style="color: white;"></i> 0336-2510770</p>
+    </div>
+  <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="color: white;">© 2020 Copyright:
+  <a href="index.html"> Tangoline.com</a>
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+</html>

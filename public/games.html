@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Populare Games</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+body{background-color: rgb(53, 47, 47);
+        }
+
+
+.midimg{margin-top: 76px;
+}
+
+.ps1img{width: 100%;
+height: 750px;
+transition: transform .2s;
+
+}
+.psimg1:hover{transform: scale(1.03);}
+
+
+.ps1text{position: absolute;
+top: 250px;
+left: 120px;
+
+color: white;
+padding: 10px;
+}
+.row1h1{font-size: 75px;
+font-weight: bolder;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.row1p1{font-size: 20px;
+font-weight: bold;
+}
+.sepbtn{padding: 12px 35px;
+   color: white;
+   background-color: rgb(192, 9, 9);
+   border: none;
+   border-radius: 20px;
+  
+   font-size: 18px;
+   }
+   .sepbtn:hover{box-shadow:0px 10px 10px 0px rgba(139, 4, 4, 0.55);}
+.link1{text-decoration: none;
+color: white;}
+.link1:hover{color: red;
+text-decoration: none;}
+.pop4img{height: 650px;
+width: 100%;}
+
+
+.popanthem{background-color: black;
+text-align: center;}
+.popimg5{padding: 30px 20px 20px 20px;
+width: 100%;
+}
+ .row2para{color: white;
+ font-size: 18px;
+ padding: 20px;
+ }
+ .poprow5h1{font-size: 60px;
+ color: silver;
+ text-align: center;
+ padding: 20px;
+ text-transform: uppercase;
+ font-weight: bolder;}
+ .sports
+{color: rgb(189, 12, 12);
+text-align: center;
+font-size: 50px;
+padding: 10px;
+font-weight: bolder;}
+ .hc{
+  margin-top: -40px;
+  color: seashell;
+  font-weight: bold;
+  font-size: 25px;
+} 
+.card2{
+
+/* background-color: whitesmoke;
+border-radius: 4px;  */
+position: relative;
+cursor: pointer;
+height: 430px;
+}
+.product
+{
+height: 280px;
+width: 100%;
+transition: transform .7s;
+}
+.product:hover{transform: scale(1.09);}
+.ratingcard{
+    padding: 10px;
+    line-height: 2px;
+}
+.checked{color: rgb(153, 10, 10);}
+.cardtext{color: silver;
+  font-size: 20px;
+    font-weight: bold;
+}
+  .redtext2{color:  grey;
+    font-size: 16px;
+
+  }
+  /* nav start */
+.dropdown-menu{background-color:rgba(0, 0, 0, 0.85);}
+.dropdown:hover>.dropdown-menu
+{
+display: block;
+}
+.dropdown-menu a:hover
+{
+background-image: linear-gradient(to right, #0a0a0a,red,#191919);
+}
+.dropdown-menu a
+{
+  background-color: transparent;
+  border-left: 4px solid red;
+}
+.dropdown-menu a
+{
+color: white;
+}
+.nav-item a:hover
+{
+color: white;
+}
+.navbar-brand img
+{
+width: 80%;
+height: 50px;
+}
+.navbar-brand
+{
+width: 8%;
+}
+.nav-item a
+{
+color: white;
+}
+
+.btn{background-color: rgb(179, 10, 10);
+color: white;
+border: none;
+border-radius: 15px;
+padding: 8px 25px;
+}
+.btn:hover{box-shadow:0px 10px 10px 0px rgba(139, 4, 4, 0.55);
+background-color: rgb(179, 10, 10);}
+.navbar{background-color:rgba(0, 0, 0, 0.925);}
+/* nav end */
+
+</style>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#"><img src="Img//project logo2.png" alt=""></a>
+        <button class="navbar-toggler bg-danger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+          
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"aria-disabled="true" style="color: white;font-size: larger;"><i><b>Home</b></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="games.html"aria-disabled="true" style="color: white;font-size: larger;"><i><b>Games</b></i></a>
+              </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i>Categories</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="action.html" style="color: white;font-size: larger;">Action Games</a>
+        <a class="dropdown-item" href="adventure.html" style="color: white;font-size: larger;">Adventures Games</a>
+        <a class="dropdown-item" href="roleplay.html" style="color: white;font-size: larger;">Role-Playing Games</a>
+        <a class="dropdown-item" href="sports.html" style="color: white;font-size: larger;">Sports Games</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i> Consoles</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="PlayStation.html" style="color: white;font-size: larger;">PlayStation 4</a>
+        <a class="dropdown-item" href="Xbox.html" style="color: white;font-size: larger;">Xbox</a>
+        <a class="dropdown-item" href="Sega.html" style="color: white;font-size: larger;">Sega</a>
+        <a class="dropdown-item" href="Nintendo.html" style="color: white;font-size: larger;">Nintendo</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i>Brands</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="sony.html" style="color: white;font-size: larger;">Sony</a>
+        <a class="dropdown-item" href="segabrand.html" style="color: white;font-size: larger;">Sega</a>
+        <a class="dropdown-item" href="ubisoft.html" style="color: white;font-size: larger;">Ubisoft</a>
+        <a class="dropdown-item" href="Electronicarts.html" style="color: white;font-size: larger;">Electronis Arts</a>
+        <a class="dropdown-item" href="Bandai.html" style="color: white;font-size: larger;">Bandai</a>
+        <a class="dropdown-item" href="rockstar.html" style="color: white;font-size: larger;">Rockstar</a>
+        </div>
+        </li>
+        
+        <li class="nav-item">
+        <a class="nav-link" href="contact.html" aria-disabled="true" style="color: white;font-size: larger;"><i><b>Contact Us</b></i></a>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </div>
+        </nav>
+        </header>
+        <div class="row midimg">
+          <div class="col-md-12">
+        <img class="ps1img" src="images/popular03.jpg" alt="">
+        <div class="ps1text">
+          <h2 class="row1h1">MOST POPULAR GAMES</h2>
+        <p class="row1p1">How many are there in you? Whose hopes and dreams do you encompass? <br> Could you but see the eyes in your own,
+          the minds in your mind, you would 
+          <br>
+          see how much we share </p>
+        
+        <button class="sepbtn">VIEW MORE</button>
+        </div>
+        
+        </div>
+        </div>
+<div class="row popanthem">
+  <div class="col-md-4 ">
+    <div class="poptext2">
+      <img class="popimg5"  src="images/popular05.png" alt="">
+      <p class="row2para" >On a world left unfinished by the gods, a shadowy faction threatens all of humankind. The only thing that stands between these villains and the ancient technology they covet are the Freelancers.
+
+        Join with up to three other players and assemble high-tech, hand-crafted, uniquely powerful exosuits. Explore vast ruins, battle deadly enemies, and claim otherworldly artifacts. With every mission, you and your Javelin exosuit grow in power. Fight the dangers of an ever-changing world. Rise united to defeat evil.
+        
+        Anthem™ invites you to experience a co-operative Action-RPG set in a new and mysterious world from BioWare™ and EA.
+        
+        Anthem launches on February 22,2019 on Xbox, PlayStation, and PC.</p>
+        <button class="sepbtn">VIEW DETAILS</button>
+    </div>
+  </div>
+  <div class="col-md-8">
+  <img class="pop4img" src="images/popular04.jpg" alt="">
+</div>
+</div>
+
+<div class="row popanthem">
+  <div class="col-md-4 ">
+    <div class="poptext2">
+      <img class="popimg5"  src="images/popular08.png" alt="">
+      <p class="row2para" >Chart your own course, navigating the Andromeda
+         galaxy to unravel its mysteries, discover vivid alien worlds, and lead the charge to 
+         find humanity a new home among the stars. Upgrade and customize your gameplay experience 
+         with a deep and flexible progression system, and lead your squad into action-packed combat
+         using advanced weaponry, special abilities, and more than a few new tricks.
+        
+        Anthem launches on February 22,2019 on Xbox, PlayStation, and PC.</p>
+        <button class="sepbtn">VIEW DETAILS</button>
+    </div>
+  </div>
+  <div class="col-md-8">
+  <img class="pop4img" src="images/popular06.jpg" alt="">
+</div>
+</div>
+<div class="row popanthem">
+  <div class="col-md-4 ">
+    <div class="poptext2">
+      <img class="popimg5"  src="images/popular09.png" alt="">
+      <p class="row2para" >A cataclysmic event plunges the land of Thedas into turmoil. Dragons darken the sky, 
+        casting a shadow of terror over a once-peaceful kingdom. Mages have broken into all-out war against the oppressive 
+        templars. Nations rise against one another. It falls to you to restore order. Lead the
+         Inquisition to hunt down the agents of chaos. The choices you make will forever change the Dragon Age.</p>
+        <button class="sepbtn">VIEW DETAILS</button>
+    </div>
+  </div>
+  <div class="col-md-8">
+  <img class="pop4img" src="images/popular10.jpg" alt="">
+</div>
+</div>
+<div class="row popanthem">
+  <div class="col-md-4 ">
+    <div class="poptext2">
+      <img class="popimg5"  src="images/popular14.png" alt="">
+      <p class="row2para" >Experience the epic sequel to the 2009 Game of the Year. In Dragon Age II, 
+        you are one of the few who escaped the destruction of your home. Now, forced to fight for survival in an ever-changing world, you must gather the deadliest of allies, amass fame and fortune, and seal your place in history. This is the
+         story of how the world changed forever. The legend of your Rise to Power begins now.</p>
+        <button class="sepbtn">VIEW DETAILS</button>
+    </div>
+  </div>
+  <div class="col-md-8">
+  <img class="pop4img" src="images/popular11.jpg" alt="">
+</div>
+</div>
+<div class="row popanthem">
+  <div class="col-md-4 ">
+    <div class="poptext2">
+      <img class="popimg5"  src="images/popular17.jpg" alt="">
+      <p class="row2para" >Star Wars ™: The Old Republic™ is a massively-multiplayer online
+         game with a free-to-play option that puts you at the center of your own story-driven 
+         Star Wars ™ saga. Play as a Jedi, a Sith, a Bounty Hunter, or as one of many other iconic
+          roles as you explore the Star Wars ™ universe as it was 3,000 years before the classic films.
+           Become the hero of your own Star Wars ™ adventure as you c
+        hoose your path down the light or dark side of the Force™.</p>
+        <button class="sepbtn">VIEW DETAILS</button>
+    </div>
+  </div>
+  <div class="col-md-8">
+  <img class="pop4img" src="images/popular14.jpg" alt="">
+</div>
+</div>
+<div class="row popanthem">
+  <div class="col-md-4 ">
+    <div class="poptext2">
+      <img class="popimg5"  src="images/popular18.jpg" alt="">
+      <p class="row2para" >You are Commander Shepard, the only one who
+         can save Earth from annihilation—but you are not alone. At your side is a 
+         team of elite, battle-hardened soldiers ready for your command. Use cover, or go in guns blazing. 
+         Unleash tactical assaults from a distance, or go toe-to-toe with enemies with the deadly omni-blade.
+
+      </p>
+        <button class="sepbtn">VIEW DETAILS</button>
+    </div>
+  </div>
+  <div class="col-md-8">
+  <img class="pop4img" src="images/popular19.jpg" alt="">
+</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-md-12">
+    <h1 class="poprow5h1">
+      YOU ALSO LIKE
+    </h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+      <h1 class="sports">GAMES ON SALE</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-2 col-md-4 col-sm-4">
+      <div class="card2">
+          <img class="product" src="images/brs.jpg" alt="">
+          <div class="ratingcard">
+          <h5 class="cardtext">Bloody Rally Show</h5>
+          <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+
+          <h5 class="redtext2">40% OFF</h5>
+          </div> 
+          </div>
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-4">
+
+      <div class="card2">
+          <img class="product" src="images/art15.jpg" alt="">
+          <div class="ratingcard">
+          <h5 class="cardtext">Ao Tennis 2</h5>
+          <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+
+          <h5 class="redtext2">7% OFF</h5>
+          </div> 
+          </div>
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-4">
+
+      <div class="card2">
+          <img class="product" src="images/darksouls.jpg" alt="">
+          <div class="ratingcard">
+          <h5 class="cardtext">Silicon Rising</h5>
+          <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+
+          <h5 class="redtext2">15% OFF</h5>
+          </div> 
+          </div>
+  </div>
+ 
+  <div class="col-lg-2 col-md-4 col-sm-4">
+
+      <div class="card2">
+          <img class="product" src="images/fishing.jpg" alt="">
+          <div class="ratingcard">
+          <h5 class="cardtext">Fishing Adventure</h5>
+          <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star"></span>
+
+          <h5 class="redtext2">25% OFF</h5>
+          </div> 
+          </div>
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-4">
+
+      <div class="card2">
+          <img class="product" src="images/rock22.jpg" alt="">
+          <div class="ratingcard">
+          <h5 class="cardtext">Need for Speed</h5>
+          <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+
+          <h5 class="redtext2">60% OFF</h5>
+          </div> 
+          </div>
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-4">
+
+      <div class="card2">
+          <img class="product" src="images/sony6.jpg" alt="">
+          <div class="ratingcard">
+          <h5 class="cardtext">Age of Gladiators </h5>
+          <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+
+          <h5 class="redtext2">9% OFF</h5>
+          </div> 
+          </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-2 col-md-4 col-sm-4">
+      <div class="card2">
+          <img class="product" src="images/sony8.jpg" alt="">
+          <div class="ratingcard">
+          <h5 class="cardtext">Bloody Rally Show</h5>
+          <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+
+          <h5 class="redtext2">40% OFF</h5>
+          </div> 
+          </div>
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-4">
+
+      <div class="card2">
+          <img class="product" src="images/ao.jpg" alt="">
+          <div class="ratingcard">
+          <h5 class="cardtext">Ao Tennis 2</h5>
+          <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+
+          <h5 class="redtext2">7% OFF</h5>
+          </div> 
+          </div>
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-4">
+
+      <div class="card2">
+          <img class="product" src="images/war2.jpg" alt="">
+          <div class="ratingcard">
+          <h5 class="cardtext">Silicon Rising</h5>
+          <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+
+          <h5 class="redtext2">15% OFF</h5>
+          </div> 
+          </div>
+  </div>
+ 
+  <div class="col-lg-2 col-md-4 col-sm-4">
+
+      <div class="card2">
+          <img class="product" src="images/wolcen.jpg" alt="">
+          <div class="ratingcard">
+          <h5 class="cardtext">Fishing Adventure</h5>
+          <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star"></span>
+
+          <h5 class="redtext2">25% OFF</h5>
+          </div> 
+          </div>
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-4">
+
+      <div class="card2">
+          <img class="product" src="images/witcher.jpg" alt="">
+          <div class="ratingcard">
+          <h5 class="cardtext">Need for Speed</h5>
+          <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+
+          <h5 class="redtext2">60% OFF</h5>
+          </div> 
+          </div>
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-4">
+
+      <div class="card2">
+          <img class="product" src="images/age.jpg" alt="">
+          <div class="ratingcard">
+          <h5 class="cardtext">Age of Gladiators </h5>
+          <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+
+          <h5 class="redtext2">9% OFF</h5>
+          </div> 
+          </div>
+  </div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark" style="background-color: rgba(0, 0, 0, 0.925);">
+  <div style="background-color:#191919;">
+  <div class="container">
+  <!-- Grid row-->
+  <div class="row py-4 d-flex align-items-center">
+  <!-- Grid column -->
+  <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+  <h6 class="mb-0" style="color: white;">Get connected with us on social networks!</h6>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-6 col-lg-7 text-center text-md-right">
+  <!-- Facebook -->
+  <a class="fb-ic">
+  <i class="fa fa-facebook mr-4" aria-hidden="true" style="color: white;"></i>
+  </a>
+  <!-- Twitter -->
+  <a class="tw-ic">
+  <i class="fa fa-twitter mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  <!-- Google +-->
+  <a class="gplus-ic">
+  <i class="fa fa-google-plus mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  <!--Linkedin -->
+  <a class="li-ic">
+  <i class="fa fa-linkedin mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  <!--Instagram-->
+  <a class="ins-ic">
+  <i class="fa fa-instagram mr-4" aria-hidden="true" style="color: white;"> </i>
+  </a>
+  </div>
+  <!-- Grid column -->
+  </div>
+  <!-- Grid row-->
+  </div>
+  </div>
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5" >
+  <!-- Grid row -->
+  <div class="row mt-3">
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+  <!-- Content -->
+  <h1 class="text-uppercase font-weight-bold" style="color: white;font-family:sans-serif;">TangOline</h1>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p style="color: white;">Former subsidiary of 2K Games; previously known as Illusion Softworks; closed in 2017 after merged into Hangar 13</p>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase font-weight-bold" style="color: white;">Products</h6>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p>
+  <a href="#!">Game Categories</a>
+  </p>
+  <p>
+  <a href="#!">Game Consoles</a>
+  </p>
+  <p>
+  <a href="#!">Game Companies</a>
+  </p>
+  <p>
+  <a href="#!">Brands</a>
+  </p>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase font-weight-bold" style="color: white;">Useful links</h6>
+  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+  <p>
+  <a href="#!">Your Account</a>
+  </p>
+  <p>
+  <a href="#!">Contact Us</a>
+  </p>
+  <p>
+  <a href="#!">Location</a>
+  </p>
+  <p>
+  <a href="#!">Help</a>
+  </p>
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  <!-- Links -->
+  <h6 class="text-uppercase font-weight-bold" style="color: white;">Contact</h6>
+    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+    <p style="color: white;">
+    <i class="fa fa-home mr-3" style="color: white;"></i> hassan-square,karachi,Pakistan</p>
+    <p style="color: white;">
+    <i class="fa fa-envelope mr-3" style="color: white;"></i> tangoline@example.com</p>
+    <p style="color: white;">
+    <i class="fa fa-phone mr-3" style="color: white;"></i> 0336-2510770</p>
+    <p style="color: white;">
+    <i class="fa fa-print mr-3" style="color: white;"></i> 0336-2510770</p>
+    </div>
+  <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="color: white;">© 2020 Copyright:
+  <a href="index.html"> Tangoline.com</a>
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+</html>

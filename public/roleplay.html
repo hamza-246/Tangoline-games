@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Role-play Games</title>
+    <style>
+     @import url("https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap");
+
+     body{
+       background-color: rgb(22, 17, 17);
+  }
+
+.events2{color: rgb(177, 13, 13);
+margin-bottom: 20px;
+margin-top: 20px;
+text-align: center;
+font-size: 70px;
+font-weight: bolder;
+}
+
+ /* *,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+} */
+
+.html{
+    font-size: 38.5%;
+}
+/* .{
+     font-family: 'Rubik', sans-serif; 
+     font-weight: 400;
+     line-height: 1.7;
+     padding: 3rem; 
+    box-sizing: border-box;
+}  */
+.body{
+    font-family:'Rubik', sans-serif ;
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+.grids {
+    max-width: 136rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+}
+
+.card-one {
+    grid-column: 1/4;
+}
+
+.card-two {
+    grid-column: 1/4;
+}
+
+.card-three {
+    grid-column: 1/4;
+}
+
+.card-four {
+    grid-column: 1/4;
+}
+
+.card-five {
+    grid-column: 1/4;
+}
+
+.card-six {
+    grid-column: 1/4;
+}
+
+.card-seven {
+    grid-column: 1/4;
+}
+
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 25rem;
+    width: 100%;
+    transition: all ease-in-out 400ms;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card:active{
+    transform: translateY(-1px);
+}
+
+.card__side {
+    transition: all .8s ease;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25rem;
+    width: 100%;
+    backface-visibility: hidden;
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+.card__side--front {
+    background-color: #2196F3;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card__side--back {
+    background-color: #303F9F;
+    transform: rotateY(180deg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.showGreen {
+    transform: rotateY(-180deg);
+}
+
+.showRed {
+    transform: rotateY(0);
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.text-box-top {
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 10px #0000006c;
+    font-weight: 400;
+}
+
+.text-box-middle {
+    font-size: 5.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px #0000006c;
+}
+
+.text-box-lower {
+    font-size: 2rem;
+    text-shadow: 2px 2px 10px #0000006c;
+    font-weight: 400;
+}
+
+.heading{
+    transition: all 0.6s linear;
+}
+
+.hide{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.show{
+    visibility: visible;
+    opacity: 1;
+}
+
+#front-1 {
+    background-image:  url("images/zombie.jpg");
+}
+
+#front-2 {
+    background-image:  url("images/nioh.jpg");
+}
+
+#front-3 {
+    background-image: url("images/horizon.jpg");
+}
+
+#front-4 {
+    background-image: url("images/divinity.jpg");
+}
+
+#front-5 {
+    background-image:  url("images/tt.png");
+}
+
+#front-6 {
+    background-image:  url("images/svalley.jpg");
+}
+
+#front-7 {
+    background-image:  url("images/ds.jpg");
+}
+
+/* Back */
+
+#back-1 {
+    background-image: linear-gradient(rgb(207, 48, 48), rgba(97, 95, 95, 0.6));
+}
+
+#back-2 {
+    background-image: linear-gradient(rgba(214, 21, 86, 0.801), rgba(20, 20, 20, 0.6));
+}
+
+#back-3 {
+    background-image: linear-gradient(rgba(84, 86, 175, 0.9), rgba(27, 27, 85, 0.9));
+}
+
+#back-4 {
+    background-image: linear-gradient(rgba(74, 190, 122, 0.767), rgba(6, 66, 48, 0.9));
+}
+
+#back-5 {
+    background-image: linear-gradient(rgba(128, 74, 190, 0.767), rgba(42, 6, 66, 0.9));
+}
+
+#back-6 {
+    background-image: linear-gradient(rgba(214, 21, 86, 0.801), rgba(20, 20, 20, 0.6));
+}
+
+#back-7 {
+    background-image: linear-gradient(rgba(31, 136, 168, 0.767), rgba(14, 46, 65, 0.9));
+}
+
+@media screen and (min-width: 1024px) {
+   
+     html{
+      font-size: 68.5%;
+     }
+    .grids {
+        max-width: 136rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+    }
+
+    .card-one {
+        grid-column: 1/3;
+    }
+    .card-two {
+        grid-column: 3/4;
+    }
+    .card-three {
+        grid-column: 1/2;
+    }
+    .card-four {
+        grid-column: 2/2;
+    }
+    .card-five {
+        grid-column: 3/4;
+    }
+    .card-six {
+        grid-column: 1/2;
+    }
+    .card-seven {
+        grid-column: 2/4;
+    }
+}    
+    .head{
+        height: 500px;
+        width: 100%;
+    }
+    .responsive{width: 100%;
+height: 0;
+padding-bottom:56.25% ;
+position: relative;
+}
+
+.responsive iframe{position: absolute;
+width: 100%;
+height: 100%;}
+.row1h{color: silver;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    padding:10px
+    }
+    .row1h3{color: red;
+        text-align: center;
+    }
+    .card2{
+width: 100%;
+background-color: black;
+border-radius: 4px;
+
+position: relative;
+cursor: pointer;
+height: 530px;
+margin-bottom: 40px;
+font-weight: 500;
+transition: transform .2s;
+box-shadow: 5px 5px 18px black;
+}
+
+.text1{padding: 12px;
+font-size: 20px;
+text-align: center;
+    color: white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif ;
+
+  
+}
+.redtext{color: red;}
+.kit{height: 380px;
+width: 100%;}
+.card2:hover{ transform: scale(1.05); 
+}
+
+.miximg{
+  width:100%;
+  height: 100%;
+}
+.grey{background-color:rgb(24, 23, 21);
+color: silver;
+text-align: center;
+height: auto;
+}
+.signme{background-color:rgb(182, 12, 12);
+color: silver;
+padding: 10px 30px;
+border-radius: 20px;
+border: none;
+font-size: 20px;
+margin-top: 20px;
+font-weight: 550;
+cursor: pointer;
+}
+.text3{padding: 50px 10px;}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: rgb(161, 5, 5);
+  font-size: 28px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 10px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 210px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 120px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 16px; 
+  color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 14px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: rgb(161, 5, 5);
+}
+.footer-widget ul li {
+  display: block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: rgb(161, 5, 5);
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: rgb(161, 5, 5);
+    padding: 13px 20px;
+    border: 1px solid rgb(161, 5, 5);
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 5px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: rgb(161, 5, 5);
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: rgb(161, 5, 5);
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+  /* nav start */
+.dropdown-menu{background-color:rgba(0, 0, 0, 0.85);}
+.dropdown:hover>.dropdown-menu
+{
+display: block;
+}
+.dropdown-menu a:hover
+{
+background-image: linear-gradient(to right, #0a0a0a,red,#191919);
+}
+.dropdown-menu a
+{
+  background-color: transparent;
+  border-left: 4px solid red;
+}
+.dropdown-menu a
+{
+color: white;
+}
+.nav-item a:hover
+{
+color: white;
+}
+.navbar-brand img
+{
+width: 80%;
+height: 50px;
+}
+.navbar-brand
+{
+width: 8%;
+}
+.nav-item a
+{
+color: white;
+}
+
+.btn{background-color: rgb(179, 10, 10);
+color: white;
+border: none;
+border-radius: 15px;
+padding: 8px 25px;
+}
+.btn:hover{box-shadow:0px 10px 10px 0px rgba(139, 4, 4, 0.55);
+background-color: rgb(179, 10, 10);}
+.navbar{background-color:rgba(0, 0, 0, 0.925);}
+/* nav end */
+
+</style>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#"><img src="Img//project logo2.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+          
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"aria-disabled="true" style="color: white;font-size: larger;"><i><b>Home</b></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="games.html"aria-disabled="true" style="color: white;font-size: larger;"><i><b>Games</b></i></a>
+              </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i>Categories</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="action.html" style="color: white;font-size: larger;">Action Games</a>
+        <a class="dropdown-item" href="adventure.html" style="color: white;font-size: larger;">Adventures Games</a>
+        <a class="dropdown-item" href="roleplay.html" style="color: white;font-size: larger;">Role-Playing Games</a>
+        <a class="dropdown-item" href="sports.html" style="color: white;font-size: larger;">Sports Games</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i> Consoles</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="PlayStation.html" style="color: white;font-size: larger;">PlayStation 4</a>
+        <a class="dropdown-item" href="Xbox.html" style="color: white;font-size: larger;">Xbox</a>
+        <a class="dropdown-item" href="Sega.html" style="color: white;font-size: larger;">Sega</a>
+        <a class="dropdown-item" href="Nintendo.html" style="color: white;font-size: larger;">Nintendo</a>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;font-size: larger;">
+        <b><i>Brands</i></b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="sony.html" style="color: white;font-size: larger;">Sony</a>
+        <a class="dropdown-item" href="segabrand.html" style="color: white;font-size: larger;">Sega</a>
+        <a class="dropdown-item" href="ubisoft.html" style="color: white;font-size: larger;">Ubisoft</a>
+        <a class="dropdown-item" href="Electronicarts.html" style="color: white;font-size: larger;">Electronis Arts</a>
+        <a class="dropdown-item" href="Bandai.html" style="color: white;font-size: larger;">Bandai</a>
+        <a class="dropdown-item" href="rockstar.html" style="color: white;font-size: larger;">Rockstar</a>
+        </div>
+        </li>
+        
+        <li class="nav-item">
+        <a class="nav-link" href="contact.html" aria-disabled="true" style="color: white;font-size: larger;"><i><b>Contact Us</b></i></a>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </div>
+        </nav>
+        </header>
+        <!-- nav closed -->
+
+        <!-- header -->
+        <div class="container-fluid">
+            <div class="row">
+                
+      <img class="head" src="images/poe.jpg" alt="" >
+                </div>
+        </div>
+       <!-- header closed -->
+  <section class="body">   
+       <div class="container">
+           <div class="row">
+            <div class="col-lg-12">
+                <h1 style="color: rgb(182, 12, 12);" class="row1h">Role-Play Games</h1>      
+           </div>
+        </div>
+    </div>
+
+        <div class="grids">
+        <div class="card-one">
+            <div class="card">
+                <div class="card__side card__side--front" id="front-1">
+                    <div class="text-box">
+                        <h3 class="text-box-top"></h3>
+                        <h1 class="text-box-middle"></h1>
+                        <h3 class="text-box-lower"></h3>
+                    </div>
+                </div>
+                <div class="card__side card__side--back" id="back-1">
+                    <div class="text-box">
+                        <h2 class="text-box-top">Project Zombiod</h2>
+                       <h4> <p> Project Zomboid is the ultimate in zombie survival. ... A hardcore RPG skillset, 
+                            a vast map, a massively customisable sandbox and a cute tutorial raccoon await the unwary...</p></h4>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-two">
+            <div class="card">
+                <div class="card__side card__side--front" id="front-2">
+                    <div class="text-box">
+    
+                    </div>
+                </div>
+                <div class="card__side card__side--back" id="back-2">
+                    <div class="text-box">
+                        <h2 class="text-box-top">Nioh</h2>
+                        <h4><p>Nioh is an action role-playing video game developed by Team Ninja for the PlayStation 4 (PS4). It was first released worldwide in February 2017,</p></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-three">
+            <div class="card">
+                <div class="card__side card__side--front" id="front-3">
+                    <div class="text-box">
+                        <h3 class="text-box-top"></h3>
+                       
+                    </div>
+                </div>
+                <div class="card__side card__side--back" id="back-3">
+                    <div class="text-box">
+                        <h2 class="text-box-top">Horizon Zero Dawn</h2>
+                <h4><p>Horizon Zero Dawn is an action role-playing game developed by Guerrilla
+                     Games and published by Sony Interactive Entertainment. It was released for the PlayStation 4 in 2017</p></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-four">
+            <div class="card">
+                <div class="card__side card__side--front" id="front-4">
+                    <div class="text-box">
+                        <h3 class="text-box-top"></h3>
+                      
+                    </div>
+                </div>
+                <div class="card__side card__side--back" id="back-4">
+                    <div class="text-box">
+                        <h2 class="text-box-top">Divinity: Original Sin</h2>
+                    <h4><p>Divinity: Original Sin is a fantasy role-playing video game developed by Larian Studios. 
+                        The game was partially funded through Kickstarter and is a prequel to Divine Divinity. </p></h4>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-five">
+            <div class="card">
+                <div class="card__side card__side--front" id="front-5">
+                    <div class="text-box">
+                        <h3 class="text-box-top"></h3>
+                    </div>
+                </div>
+                <div class="card__side card__side--back" id="back-5">
+                    <div class="text-box">
+                        <h2 class="text-box-top">Power of Times</h2>
+               <h4><p>Tower of Time is an incredible adventure packed with over 50 hours of gameplay, hand-crafted levels,
+                    and a rich story told through cinematics. </p></h4> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-six">
+            <div class="card">
+                <div class="card__side card__side--front" id="front-6">
+                    <div class="text-box">
+                        <h3 class="text-box-top"></h3>
+                    </div>
+                </div>
+                <div class="card__side card__side--back" id="back-6">
+                    <div class="text-box">
+                        <h3 class="text-box-top">Stardew Valley</h3>
+                <h4><p>Stardew Valley is a simulation role-playing video game developed by Eric "ConcernedApe" Barone. 
+                    The game was initially released for Microsoft Windows in February 2016</p></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-seven">
+            <div class="card">
+                <div class="card__side card__side--front" id="front-7">
+                    <div class="text-box">
+                        <h3 class="text-box-top"></h3>
+                    </div>
+                </div>
+                <div class="card__side card__side--back" id="back-7">
+                    <div class="text-box">
+                        <h2 class="text-box-top">Dark Souls III</h2>
+                  <h4><p>Dark Souls III is an action role-playing video game developed by FromSoftware and published by Bandai Namco Entertainment for PlayStation 4, Xbox One, and Microsoft Windows.
+                       A part of the Souls series</p></h4>      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Game Video -->
+  <div class="container">
+    <div class="rowblack">
+    <div class="row">
+        <div class="col-lg-12">
+         
+            <h1 class="row1h">It's Time To Have a Race with Thrill</h1>
+            <h2 class="row1h3">Like Driving the Car You've Always Had...</h2>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-12">
+    
+    <div class="responsive">
+        <iframe  width="560" height="315" 
+        src="Asstteso.mp4" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+         allowfullscreen></iframe> 
+        </div>  
+      </div>
+      </div>
+      
+</div>
+</div>
+       <!-- Game Video Ends here -->
+
+       <div class="row">
+        <div class="col-md-12">
+        <h1 class="events">Feature Games</h1>
+    </div>
+        </div>
+  
+        <div class="row">
+  <div class="col-md-4">
+    <div class="card2">
+      <img class="kit" src="images/bb.jpg" alt="">
+      <div class="text1">
+          <h2 class="redtext">BLOODBRONE</h2>
+  
+      <h4>Bloodborne is an action role-playing game developed by FromSoftware and published by Sony Computer Entertainment for the PlayStation 4.</h4>
+    </div> 
+      </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card2">
+      <img class="kit" src="images/rsh.jpeg" alt="">
+      <div class="text1">
+          <h2 class="redtext">READY SET HEROS</h2>
+      <h4>ReadySet Heroes is a fast-paced multiplayer dungeon crawler that packs a big twist!</h4>
+     
+    </div> 
+      </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card2">
+      <img class="kit" src="images/moster.jpg" alt="">
+      <div class="text1">
+          <h2 class="redtext">MONSTER HUNTER</h2>
+      <h4>Welcome to a new world! In Monster Hunter: World, the latest installment in the series, you can enjoy the ultimate hunting experience,
+           using everything at your disposal to hunt monsters in a new world teeming with surprises and excitement</h4>
+      
+    </div> 
+ </div>
+  </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card2">
+              <img class="kit" src="images/dk.jpg" alt="">
+              <div class="text1">
+                  <h2 class="redtext">DRAGON BALL Z</h2>
+              <h4>Relive the story of Goku and other Z Fighters in DRAGON BALL Z: KAKAROT! Beyond the epic battles, experience life in the DRAGON BALL Z ...</h4>
+              
+            </div> 
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card2">
+              <img class="kit" src="images/TALE.png" alt="">
+              <div class="text1">
+                  <h2 class="redtext">TALES OF ARISE</h2>
+              <h4>Tales of Arise is an upcoming action role-playing game developed and published by Bandai Namco Entertainment. An entry in the Tales series, 
+                  it is planned for release in 2020 for Microsoft Windows, PlayStation 4 and Xbox One.</h4>
+       
+            </div> 
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card2">
+              <img class="kit" src="images/shark.jpg" alt="">
+              <div class="text1">
+                  <h2 class="redtext">HUNGRY SHARK</h2>
+              <h4>Hungry Shark is a series of arcade-style RPG games developed and published by Future Games of London and Ubisoft. The games allow players to control several unique species of sharks,
+                   including mako sharks, great white sharks, hammerhead sharks, reef sharks, and megalodon.</h4>
+              
+            </div> 
+              </div>
+          </div>
+          
+                </div>
+          
+  
+    <div class="container-fluid">         
+  <div class="">
+  <div class="row grey">
+    <div class="col-md-4">
+      <img class="miximg" src="images/sb.jpg" alt="">
+    </div>
+  <div class="col-md-8">
+    <div class="text3">
+    <h1 class="events">SKULL AND BONES(the upcoming thrill)</h1>
+    <h5>Skull & Bones is an upcoming action video game developed by Ubisoft Singapore and published by 
+        Ubisoft for release on Microsoft Windows, PlayStation 4, and Xbox One, sometime after March 2021..</h5>
+      
+       <button class="signme" type="submit"> BOOK NOW</button>
+      </div>
+  </div>
+  
+  </div>
+  </div>
+  </div> 
+<br> <br>
+</section> 
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark" style="background-color: rgba(0, 0, 0, 0.925);">
+    <div style="background-color:#191919;">
+    <div class="container">
+    <!-- Grid row-->
+    <div class="row py-4 d-flex align-items-center">
+    <!-- Grid column -->
+    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+    <h6 class="mb-0" style="color: white;">Get connected with us on social networks!</h6>
+    </div>
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="col-md-6 col-lg-7 text-center text-md-right">
+    <!-- Facebook -->
+    <a class="fb-ic">
+    <i class="fa fa-facebook mr-4" aria-hidden="true" style="color: white;"></i>
+    </a>
+    <!-- Twitter -->
+    <a class="tw-ic">
+    <i class="fa fa-twitter mr-4" aria-hidden="true" style="color: white;"> </i>
+    </a>
+    <!-- Google +-->
+    <a class="gplus-ic">
+    <i class="fa fa-google-plus mr-4" aria-hidden="true" style="color: white;"> </i>
+    </a>
+    <!--Linkedin -->
+    <a class="li-ic">
+    <i class="fa fa-linkedin mr-4" aria-hidden="true" style="color: white;"> </i>
+    </a>
+    <!--Instagram-->
+    <a class="ins-ic">
+    <i class="fa fa-instagram mr-4" aria-hidden="true" style="color: white;"> </i>
+    </a>
+    </div>
+    <!-- Grid column -->
+    </div>
+    <!-- Grid row-->
+    </div>
+    </div>
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5" >
+    <!-- Grid row -->
+    <div class="row mt-3">
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+    <!-- Content -->
+    <h1 class="text-uppercase font-weight-bold" style="color: white;font-family:sans-serif;">TangOline</h1>
+    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+    <p style="color: white;">Former subsidiary of 2K Games; previously known as Illusion Softworks; closed in 2017 after merged into Hangar 13</p>
+    </div>
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase font-weight-bold" style="color: white;">Products</h6>
+    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+    <p>
+    <a href="#!">Game Categories</a>
+    </p>
+    <p>
+    <a href="#!">Game Consoles</a>
+    </p>
+    <p>
+    <a href="#!">Game Companies</a>
+    </p>
+    <p>
+    <a href="#!">Brands</a>
+    </p>
+    </div>
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase font-weight-bold" style="color: white;">Useful links</h6>
+    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+    <p>
+    <a href="#!">Your Account</a>
+    </p>
+    <p>
+    <a href="#!">Contact Us</a>
+    </p>
+    <p>
+    <a href="#!">Location</a>
+    </p>
+    <p>
+    <a href="#!">Help</a>
+    </p>
+    </div>
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase font-weight-bold" style="color: white;">Contact</h6>
+    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+    <p style="color: white;">
+    <i class="fa fa-home mr-3" style="color: white;"></i> hassan-square,karachi,Pakistan</p>
+    <p style="color: white;">
+    <i class="fa fa-envelope mr-3" style="color: white;"></i> tangoline@example.com</p>
+    <p style="color: white;">
+    <i class="fa fa-phone mr-3" style="color: white;"></i> 0336-2510770</p>
+    <p style="color: white;">
+    <i class="fa fa-print mr-3" style="color: white;"></i> 0336-2510770</p>
+    </div>
+    <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" style="color: white;">© 2020 Copyright:
+    <a href="index.html"> Tangoline.com</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+
+
+    </body>
+
+
+<script>
+    var flipCheck = 0;
+
+    function rotateCards() {
+        if (flipCheck === 0) {
+
+            document.getElementById('front-2').classList.add('showGreen');
+            document.getElementById('back-2').classList.add('showRed');
+
+            document.getElementById('front-1').classList.add('showGreen');
+            document.getElementById('back-1').classList.add('showRed');
+
+            flipCheck = 1;
+
+
+            setTimeout(function () {
+                document.getElementById('front-4').classList.add('showGreen');
+                document.getElementById('back-4').classList.add('showRed');
+
+                document.getElementById('front-3').classList.add('showGreen');
+                document.getElementById('back-3').classList.add('showRed');
+
+
+                document.getElementById('front-5').classList.add('showGreen');
+                document.getElementById('back-5').classList.add('showRed');
+
+                setTimeout(function () {
+
+
+                    document.getElementById('front-6').classList.add('showGreen');
+                    document.getElementById('back-6').classList.add('showRed');
+
+                    document.getElementById('front-7').classList.add('showGreen');
+                    document.getElementById('back-7').classList.add('showRed');
+                }, 500);
+
+            }, 500);
+
+        } else {
+
+            document.getElementById('front-2').classList.remove('showGreen');
+            document.getElementById('back-2').classList.remove('showRed');
+
+            document.getElementById('front-1').classList.remove('showGreen');
+            document.getElementById('back-1').classList.remove('showRed');
+
+            flipCheck = 0;
+
+            setTimeout(function () {
+                document.getElementById('front-3').classList.remove('showGreen');
+                document.getElementById('back-3').classList.remove('showRed');
+
+                document.getElementById('front-4').classList.remove('showGreen');
+                document.getElementById('back-4').classList.remove('showRed');
+
+                document.getElementById('front-5').classList.remove('showGreen');
+                document.getElementById('back-5').classList.remove('showRed');
+
+                setTimeout(function () {
+
+                    document.getElementById('front-7').classList.remove('showGreen');
+                    document.getElementById('back-7').classList.remove('showRed');
+
+                    document.getElementById('front-6').classList.remove('showGreen');
+                    document.getElementById('back-6').classList.remove('showRed');
+                }, 500);
+            }, 500);
+        }
+    }
+
+    setInterval(rotateCards, 3000); // Time in milliseconds
+</script> 
+
+</html>
+

@@ -1,0 +1,32 @@
+*{
+margin: 0px;
+padding: 0%;
+}
+.col-md-3{
+ width: 100%;
+}
+img
+{
+width: 100%;
+height: 225px;
+margin-top: 20px;
+margin-bottom: 20px;
+z-index: -1;
+}
+.red img:hover {
+transform: scale(1.1);
+}
+.sec
+{
+position: relative;
+}
+#more {display: none;}
+.pra{
+margin-top: -65%;
+margin-left: 5%;
+}
+.button{
+margin-left: 5%;
+background-color: transparent;
+background-repeat: no-repeat;
+}
